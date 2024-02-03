@@ -9,6 +9,10 @@ tags:
 typora-root-url: ..\..\themes\next\source
 ---
 
+<script setup>
+import Input from '../../components/Input.vue'
+</script>
+
 ## 1 概述
 
 声笔简码是独特的普及型顶功输入方案，是广大普通用户输入中文的最佳选择，比现在流行的所谓智能拼音输入法更加具有优势。本文是图文教程，视频教程请移步[声笔输入法边播边讲240106](https://www.bilibili.com/video/BV1Pe411U7ZH/)，可以参照学习。
@@ -65,6 +69,8 @@ typora-root-url: ..\..\themes\next\source
 - 二字词：`ssbb`，即各字的声母加第二字的前两个笔画。例如，`关系gxua 高兴gxoo 导演dyoo 理想lxei`。
 - 三字词：`sssb`，即各字的声母加第三字的首笔。例如，`计算机jsje 输入法srfo`。
 - 多字词：`ssss`，即前三字的声母加末字的声母。例如，`爱因斯坦vyst 中华人民共和国zhrg`。
+
+<Input method="sbjm" disableSwitch/>
 
 ### 3.1 简要说明
 

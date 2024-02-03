@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import * as naiveui from "naive-ui";
-const {
-  NConfigProvider,
-  NNotificationProvider,
-  NDialogProvider,
-  NMessageProvider,
-  darkTheme,
-} = naiveui;
+const { NConfigProvider, darkTheme } = naiveui;
 import MyMenu from "./Menu.vue";
 import MyPanel from "./Panel.vue";
 import { onMounted, provide, ref } from "vue";
@@ -113,23 +107,17 @@ const panel = ref<InstanceType<typeof MyPanel>>();
 
 <template>
   <n-config-provider :theme="darkTheme">
-    <n-notification-provider :max="1">
-      <n-dialog-provider>
-        <n-message-provider>
-          <keep-alive>
-            <n-space vertical>
-              <my-menu :disable-switch="props.disableSwitch"/>
-              <n-input
-                id="container"
-                v-model:value="text"
-                type="textarea"
-                :rows="15"
-              />
-              <my-panel ref="panel" />
-            </n-space>
-          </keep-alive>
-        </n-message-provider>
-      </n-dialog-provider>
-    </n-notification-provider>
+    <keep-alive>
+      <n-space vertical>
+        <my-menu :disable-switch="props.disableSwitch" />
+        <n-input
+          id="container"
+          v-model:value="text"
+          type="textarea"
+          :rows="15"
+        />
+        <my-panel ref="panel" />
+      </n-space>
+    </keep-alive>
   </n-config-provider>
 </template>
