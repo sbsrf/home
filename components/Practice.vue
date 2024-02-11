@@ -12,6 +12,7 @@ const {
   NSpace,
   NCard,
   NModal,
+  NInput,
   NP,
   NH1,
   NUl,
@@ -128,17 +129,16 @@ const discard = () => {
   next();
 };
 
-document.addEventListener("keypress", (e) => {
-  e.preventDefault();
+const process = (input: string) => {
   if (!current) {
     return;
   }
-  if (current.value?.key === e.key.toLowerCase()) {
+  if (current.value?.key === input.toLowerCase()) {
     preceed();
   } else {
     hint.value = true;
   }
-});
+};
 
 const length = computed(() => {
   return queue.value.size();
@@ -244,14 +244,17 @@ onMounted(() => {
       <n-card>
         <template #header>
           <div class="radical">
-            {{ current?.radical }}
+            <span>{{ current?.radical }}</span>
+            <span v-if="hint">&nbsp;[{{ current?.key }}]</span>
           </div>
+          <n-input
+            value=""
+            @input="(x) => process(x)"
+            placeholder="请输入部首对应的按键"
+            style="font-size: 16px"
+          />
         </template>
-        <template #footer>
-          <div class="key" v-if="hint">
-            {{ current?.key }}
-          </div>
-        </template>
+        <template #footer> </template>
       </n-card>
     </n-space>
   </n-config-provider>
