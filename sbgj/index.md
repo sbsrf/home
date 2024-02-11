@@ -5,7 +5,7 @@ lastUpdated: false
 ---
 
 <script setup>
-import UserDictMigrator from '../../components/UserDictMigrator.vue'
+import UserDictMigrator from '../components/UserDictMigrator.vue'
 </script>
 
 # 声笔工具

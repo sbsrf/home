@@ -1,6 +1,6 @@
 ---
 title: 声笔简码
-date: 2019-07-08 16:14:45
+date: 2019-07-08
 comments: false
 tags:
 - 简码

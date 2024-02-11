@@ -8,6 +8,7 @@ const {
   NSpace,
   NIcon,
   NConfigProvider,
+  NResult,
   darkTheme,
 } = naiveui;
 import { FileArchive } from "@vicons/fa";
@@ -50,7 +51,6 @@ const main = (content: string) => {
       console.error(`无法识别：${line}`);
     }
   }
-  console.log(`已完成词典处理，精简后的条目数量为：${entries}`);
   return filtered.join("\n");
 };
 
@@ -75,7 +75,6 @@ function downloadFile() {
   a.click();
   window.URL.revokeObjectURL(url); // 避免内存泄漏
 }
-
 </script>
 <template>
   <n-config-provider :theme="darkTheme">
@@ -92,7 +91,17 @@ function downloadFile() {
           </n-text>
         </n-upload-dragger>
       </n-upload>
-      <n-button @click="downloadFile" :disabled="content.length === 0">下载处理好的文件</n-button>
+      <n-result
+        v-if="content.length > 0"
+        status="success"
+        :description="`转换成功，共 ${
+          content.split('\n').length
+        } 条`"
+      >
+        <template #footer>
+          <n-button :on-click="downloadFile">下载</n-button>
+        </template>
+      </n-result>
     </n-space>
   </n-config-provider>
 </template>

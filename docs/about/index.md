@@ -1,6 +1,6 @@
 ---
 title: 总体介绍
-date: 2019-07-08 15:57:40
+date: 2019-07-08
 comments: false
 typora-root-url: ..\..\themes\next\source
 ---

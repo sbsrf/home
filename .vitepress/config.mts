@@ -11,6 +11,7 @@ export default defineConfig({
       { text: "教程", link: "/about/" },
       { text: "文章", link: "/posts/" },
       { text: "体验", link: "/sbkd/" },
+      { text: "练习", link: "/sbtf/" },
       { text: "工具", link: "/sbgj/" },
     ],
 

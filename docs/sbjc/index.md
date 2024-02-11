@@ -1,6 +1,6 @@
 ---
 title: 声笔基础
-date: 2021-07-09 15:36:43
+date: 2021-07-09
 comments: false
 typora-root-url: ..\..\themes\next\source
 ---

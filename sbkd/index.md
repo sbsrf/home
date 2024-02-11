@@ -5,7 +5,7 @@ lastUpdated: false
 ---
 
 <script setup>
-import Input from '../../components/Input.vue'
+import Input from '../components/Input.vue'
 </script>
 
 # 声笔快打

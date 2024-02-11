@@ -1,6 +1,6 @@
 ---
 title: 安装配置
-date: 2021-07-01 15:37:36
+date: 2021-07-01
 comments: false
 typora-root-url: ..\..\themes\next\source
 ---
