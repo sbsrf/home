@@ -30,11 +30,10 @@ hero:
 
 <script setup>
 import MaxWidthWrapper from './components/MaxWidthWrapper.vue'
+import Statistics from './components/Statistics.vue'
 </script>
 
-<div style="text-align: center; margin: 2rem; font-size: 2rem">
-继续了解……
-</div>
+<Statistics />
 
 <MaxWidthWrapper>
 <img src="https://singbit.pages.dev/images/slice22.webp" loading="lazy" alt="特性集锦">
