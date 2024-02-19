@@ -1,11 +1,11 @@
 ---
 title: 声笔飞讯
-date: 2023-03-08
+date: 2023-03-08 16:43:31
 tags:
 - 声笔
 - 飞讯
 - 顶功
-typora-root-url: ..\..\themes\next\source
+typora-root-url: ..\..\public
 ---
 
 ## 1 飞讯概述

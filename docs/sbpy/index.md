@@ -1,9 +1,9 @@
 ---
 
 title: 声笔拼音
-date: 2019-11-30
+date: 2019-11-30 04:05:05
 comments: false
-typora-root-url: ..\..\themes\next\source
+typora-root-url: ..\..\public
 ---
 
 ## 1  引言

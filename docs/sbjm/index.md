@@ -1,17 +1,13 @@
 ---
 title: 声笔简码
-date: 2019-07-08
+date: 2019-07-08 16:14:45
 comments: false
 tags:
 - 简码
 - 顶功
 - 声笔
-typora-root-url: ..\..\themes\next\source
+typora-root-url: ..\..\public
 ---
-
-<script setup>
-import Input from '../../components/Input.vue'
-</script>
 
 ## 1 概述
 
@@ -69,8 +65,6 @@ import Input from '../../components/Input.vue'
 - 二字词：`ssbb`，即各字的声母加第二字的前两个笔画。例如，`关系gxua 高兴gxoo 导演dyoo 理想lxei`。
 - 三字词：`sssb`，即各字的声母加第三字的首笔。例如，`计算机jsje 输入法srfo`。
 - 多字词：`ssss`，即前三字的声母加末字的声母。例如，`爱因斯坦vyst 中华人民共和国zhrg`。
-
-<Input method="sbjm" disableSwitch/>
 
 ### 3.1 简要说明
 
@@ -286,7 +280,7 @@ import Input from '../../components/Input.vue'
 
 ![image-20230322093406259](/images/image-20230322093406259.png)
 
-再如， 想打「部门设置」，在输入jkjd后，发现为空码，提示是这样的：
+再如， 想打「加快进度」，在输入jkjd后，发现为空码，提示是这样的：
 
 ![image-20231119110555936](/images/image-20231119110555936.png)
 

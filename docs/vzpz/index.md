@@ -1,39 +1,35 @@
 ---
 title: 安装配置
-date: 2021-07-01
+date: 2021-07-01 15:37:36
 comments: false
-typora-root-url: ..\..\themes\next\source
+typora-root-url: ..\..\public
 ---
 
-声笔系列码是基于著名的开源输入法平台Rime进行二次开发的，其安装配置比较复杂。这一方面有Rime的原因，因为它没有提供丰富的图形界面，对普通用户不太友好。
+声笔系列码，又称声笔输入法，是基于著名的开源输入法平台Rime进行二次开发的，其安装配置比较复杂。这一方面有Rime的原因，因为它没有提供丰富的图形界面，对普通用户不太友好。
 
 在配置方面，声笔系列码主要是基于YAML文件来进行的，对于只习惯于图形界面的用户来可能是一个挑战。不过，一旦学会用文本来做配置，就会感觉到这种方式的强大和灵活。闯过这一关，就会如鱼得水，就能随心所欲！本文就是帮助用户克服困难，过关斩将的。
 
-[点这里观看声笔输入法安装讲解](https://www.bilibili.com/video/BV1er4y1h7G2/)。Poto特别做了：[声笔安装教程](https://zhuanlan.zhihu.com/p/646712384)；声笔[查字软件](https://ispoto.github.io/SingbitDict/)；[飞系部首条反下载版](https://ispoto.github.io/SingbitP/)；屏幕置顶的声笔部首键位助记软件——[声笔飞魂](https://singbit.pages.dev/singbitK)。另外，HotLeave做了[飞系部首条反网页版](https://singbit.pages.dev/singbitO)，并由Poto进行了修改。
-
 ## 1 软件与资源
 
-### 1.1 获取软件
+声笔系列码现在有两种发行版，一种是通过定制librime而形成的魔改版，另一种是在原版rime上通过lua脚本实现的lua版。
 
-为了便于用户下载使用，声笔系列码已经发布在了网上，可以通过[github](https://github.com/sbxlm/sbxlm.github.io/releases)或者[码云](https://gitee.com/sbxlm/sbxlm/releases)下载，也可以在声笔QQ交流群（780510469、783734487、445906697和728093309）的共享文件夹里下载，下载位置如下图所示。使用iOS的用户，可以直接在苹果应用商店下载仓输入法，其中已经专门内置了声笔。网上其它地方查找到的版本太陈旧，下载站点转载太多，也不一定安全，不建议使用。
+为了便于用户下载使用，声笔系列码已经发布在了网上，可以通过[github](https://github.com/sbxlm/sbxlm.github.io/releases)或者[码云](https://gitee.com/sbxlm/sbxlm/releases)下载。软件也可以在声笔QQ交流群（780510469、783734487、445906697和728093309）的共享文件夹里下载，下载位置如下图所示。使用iOS的用户，可以直接在苹果应用商店下载仓输入法。网上其它地方查找到的版本太陈旧，下载站点转载太多，也不一定安全，不建议使用。
 
 ![image-20230222102454915](/images/image-20230222102454915.png)
 
 Windows 版本至少要求Windows 10。安卓版本至少要求 8.0，而华为的鸿蒙是兼容安卓的，也没有问题。MacOS采用较新的版本即可，iOS版根据仓输入法的要求而定。至于Linux的用户，则需要自己通过声笔定制的librime源程序进行编译，声笔爱好者有编译打包声笔librime的，可以想法借此编译使用，具体可参见[编译参考](https://noodlefighter.com/posts/d400/)。
 
-安装包文件名称后的日期为发布日期。你下载的文件日期可能是不一样的，不要紧，是正常的，因为软件是可能会不断更新的。
+魔改版安装包文件名称后的日期为发布日期。你下载的文件日期可能是不一样的，不要紧，是正常的，因为软件是可能会不断更新的。lua版只有声笔方案的压缩包。
 
 ![image-20231220094757796](/images/image-20231220094757796.png)
 
-### 1.2 软件构成
-
-新版声笔系列码的实现是建立在 RIME 输入法平台之上的。但是，为了支持声笔系列码的特殊功能，如续码顶屏、字母选重、扩展编码、自动码长等，对官方的 RIME 程序进行了特别的定制，所不保证可以在定制程序上使用其它的 RIME 输入法方案。
-
 ## 2 安装与更新
 
-### 2.1 WIN版安装
+魔改版的安装请[点这里观看声笔输入法安装讲解](https://www.bilibili.com/video/BV1er4y1h7G2/)，[点这里观看声笔输入法WIN版安装演示](https://www.bilibili.com/video/BV1Gq4y1c7PL/)。luo版需要先安装原版的rime程序，再复制方案进去。
 
-[点这里观看声笔输入法WIN版安装演示](https://www.bilibili.com/video/BV1Gq4y1c7PL/)。
+Poto特别做了：[声笔安装教程](https://zhuanlan.zhihu.com/p/646712384)；声笔[查字软件](https://ispoto.github.io/SingbitDict/)；[飞系部首条反下载版](https://ispoto.github.io/SingbitP/)；屏幕置顶的声笔部首键位助记软件——[声笔飞魂](https://singbit.pages.dev/singbitK)。另外，HotLeave做了[飞系部首条反网页版](https://singbit.pages.dev/singbitO)，并由Poto进行了修改。
+
+### 2.1 WIN版安装
 
 在Windows上，把您下载的声笔输入法WIN版压缩包解压，在解压后的文件夹中找到安装程序Weasel4sbxlm，以管理员权限进行安装。
 

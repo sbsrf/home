@@ -1,12 +1,12 @@
 ---
 title: 声笔飞码
-date: 2019-07-18
+date: 2019-07-18 04:24:56
 comments: false
 tags:
 - 声笔
 - 飞码
 - 顶功
-typora-root-url: ..\..\themes\next\source
+typora-root-url: ..\..\public
 ---
 
 ## 1 飞码概述
