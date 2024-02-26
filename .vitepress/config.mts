@@ -50,6 +50,7 @@ export default defineConfig({
         {
           text: "文章",
           items: [
+            { text: "声笔三拼", link: "/posts/sbsp.md" },
             { text: "2023年6月22日声笔更新", link: "/posts/2023年6月22日声笔更新.md" },
             { text: "编码中频率的作用", link: "/posts/编码中频率的作用.md" },
             { text: "个体词汇与全体词汇关系猜想", link: "/posts/个体词汇与全体词汇关系猜想.md" },
