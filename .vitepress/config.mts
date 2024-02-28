@@ -50,6 +50,9 @@ export default defineConfig({
         {
           text: "文章",
           items: [
+            { text: "声笔输入法9x的安装与配置", link: "/posts/声笔输入法9x的安装与配置.md" },
+            { text: "中文输入模式", link: "/posts/中文输入模式.md" },
+            { text: "如何调试librime源代码", link: "/posts/HowToDebugLibrimeOnWindows.md" },
             { text: "2023年6月22日声笔更新", link: "/posts/2023年6月22日声笔更新.md" },
             { text: "编码中频率的作用", link: "/posts/编码中频率的作用.md" },
             { text: "个体词汇与全体词汇关系猜想", link: "/posts/个体词汇与全体词汇关系猜想.md" },
