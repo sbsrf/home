@@ -12,4 +12,6 @@ import Practice from '../components/Practice.vue'
 
 利用科学方法高效记忆飞系方案中的部首。
 
+<ClientOnly>
 <Practice />
+</ClientOnly>

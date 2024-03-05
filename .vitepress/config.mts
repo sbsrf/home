@@ -114,5 +114,10 @@ export default defineConfig({
     "docs/:page/index.md": ":page/index.md",
     "pages/:page/index.md": ":page/index.md",
   },
-  appearance: "force-dark"
+  appearance: "force-dark",
+  vite: {
+    ssr: {
+      noExternal: ["naive-ui","vueuc","date-fns"],
+    },
+  },
 });
