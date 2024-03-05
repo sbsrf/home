@@ -115,6 +115,9 @@ export default defineConfig({
     "pages/:page/index.md": ":page/index.md",
   },
   appearance: "force-dark",
+  head: [
+    ['link', { rel: 'icon', href: '/images/avatar.svg', type: 'image/svg+xml' }],
+  ],
   vite: {
     ssr: {
       noExternal: ["naive-ui","vueuc","date-fns"],
