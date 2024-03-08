@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import * as naiveui from "naive-ui";
-const { NConfigProvider, darkTheme } = naiveui;
+import { NConfigProvider, darkTheme, NInput, NSpace } from "naive-ui";
 import MyMenu from "./Menu.vue";
 import MyPanel from "./Panel.vue";
 import { onMounted, provide, ref } from "vue";
@@ -15,7 +14,6 @@ import LibrimeWorker, {
   textKey,
   workerKey,
 } from "../src/util";
-const { NInput, NSpace } = naiveui;
 
 const props = defineProps<{ method?: string; disableSwitch?: boolean }>();
 
@@ -110,12 +108,7 @@ const panel = ref<InstanceType<typeof MyPanel>>();
     <keep-alive>
       <n-space vertical>
         <my-menu :disable-switch="props.disableSwitch" />
-        <n-input
-          id="container"
-          v-model:value="text"
-          type="textarea"
-          :rows="15"
-        />
+        <n-input id="container" v-model:value="text" type="textarea" :rows="15" />
         <my-panel ref="panel" />
       </n-space>
     </keep-alive>

@@ -14,4 +14,6 @@ import Input from '../components/Input.vue'
 
 为提高访问速度，在线版中的每个方案仅包含六千余字和五万余词，且不包含反查功能。如您希望尝试完整版，欢迎在[发布页](https://gitee.com/sbxlm/sbxlm/releases)下载。
 
-<Input />
+<ClientOnly><Input /></ClientOnly>
+
+

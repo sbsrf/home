@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import * as naiveui from "naive-ui";
+import { NButton, NButtonGroup, NSpace, NSelect } from "naive-ui";
 import {
   getTextarea,
   imeKey,
@@ -11,7 +11,6 @@ import {
 } from "../src/util";
 import { Ref, inject } from "vue";
 
-const { NButton, NButtonGroup, NSpace, NSelect } = naiveui;
 const props = defineProps<{ disableSwitch?: boolean }>();
 
 const ime = inject<Ref<string>>(imeKey);

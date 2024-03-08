@@ -3,9 +3,7 @@ import { MinPriorityQueue } from "@datastructures-js/priority-queue";
 import { supermemo, SuperMemoItem, SuperMemoGrade } from "supermemo";
 import { computed, onMounted, onUnmounted, ref } from "vue";
 import { shuffle } from "lodash-es";
-import * as naiveui from "naive-ui";
-
-const {
+import {
   NButton,
   NConfigProvider,
   NProgress,
@@ -19,7 +17,7 @@ const {
   NLi,
   NA,
   darkTheme,
-} = naiveui;
+} from "naive-ui";
 
 interface Radical extends SuperMemoItem {
   radical: string;

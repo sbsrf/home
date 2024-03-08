@@ -18,6 +18,6 @@ import UserDictMigrator from '../components/UserDictMigrator.vue'
 
 2. 点击或拖拽上传，待转换完成后，点击下载；
 
-<UserDictMigrator />
+<ClientOnly><UserDictMigrator /></ClientOnly>
 
 3. 安装官方的 Rime 输入法前端和声笔 10.0 方案文件，把转换完成的文件放置在同步文件夹，然后再次运行「同步」命令，即可完成迁移。

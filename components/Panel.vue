@@ -9,7 +9,7 @@ import {
   inject,
   Ref,
 } from "vue";
-import * as naiveui from "naive-ui";
+import { NPopover, NMenu, NText, NButton, NIcon,MenuOption } from "naive-ui";
 import { CaretLeft, CaretRight } from "@vicons/fa";
 import getCaretCoordinates from "textarea-caret";
 import { isMobile, getTextarea, workerKey, textKey, loadingKey, syncOptionsKey, selectIMEKey, changeLanguageKey } from "../src/util";
@@ -21,8 +21,6 @@ const loading = inject<Ref<boolean>>(loadingKey)!;
 const syncOptions = inject<(a: any) => void>(syncOptionsKey)!;
 const selectIME = inject<(s: string) => Promise<void>>(selectIMEKey)!;
 const changeLanguage = inject<() => void>(changeLanguageKey)!;
-
-const { NPopover, NMenu, NText, NButton, NIcon } = naiveui;
 
 const props = defineProps<{
   debugMode?: boolean;
@@ -41,7 +39,7 @@ const preEditHead = ref<string>("");
 const preEditBody = ref<string>("");
 const preEditTail = ref<string>("");
 
-const menuOptions = ref<naiveui.MenuOption[]>([]);
+const menuOptions = ref<MenuOption[]>([]);
 const highlighted = ref<number>(0);
 
 const prevDisabled = ref<boolean>(true);
@@ -396,28 +394,13 @@ defineExpose({
 </script>
 
 <template>
-  <n-popover
-    :show="showMenu"
-    :show-arrow="false"
-    :x="x"
-    :y="y"
-    :flip="!dragging"
-    placement="bottom-start"
-    trigger="manual"
-    style="cursor: move"
-    @mousedown="onMousedown"
-    @touchstart="onTouchstart"
-  >
+  <n-popover :show="showMenu" :show-arrow="false" :x="x" :y="y" :flip="!dragging" placement="bottom-start"
+    trigger="manual" style="cursor: move" @mousedown="onMousedown" @touchstart="onTouchstart">
     <n-text type="success"> {{ preEditHead }} </n-text>&nbsp;
     <n-text type="info"> {{ preEditBody }} </n-text>&nbsp;
     {{ preEditTail }}
-    <n-menu
-      v-show="menuOptions.length"
-      :options="menuOptions"
-      :mode="'horizontal'"
-      :value="highlighted"
-      @update:value="onClick"
-    />
+    <n-menu v-show="menuOptions.length" :options="menuOptions" :mode="'horizontal'" :value="highlighted"
+      @update:value="onClick" />
     <n-button text :disabled="prevDisabled">
       <n-icon :component="CaretLeft" @click="input('-')" />
     </n-button>

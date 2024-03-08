@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import * as naiveui from "naive-ui";
-const {
+import {
   NButton,
   NUpload,
   NUploadDragger,
@@ -10,7 +9,8 @@ const {
   NConfigProvider,
   NResult,
   darkTheme,
-} = naiveui;
+} from "naive-ui";
+
 import { FileArchive } from "@vicons/fa";
 import { CustomRequestOptions } from "naive-ui/es/upload/src/interface";
 import { ref } from "vue";
@@ -76,6 +76,7 @@ function downloadFile() {
   window.URL.revokeObjectURL(url); // 避免内存泄漏
 }
 </script>
+
 <template>
   <n-config-provider :theme="darkTheme">
     <n-space vertical :align="'center'">
@@ -91,13 +92,8 @@ function downloadFile() {
           </n-text>
         </n-upload-dragger>
       </n-upload>
-      <n-result
-        v-if="content.length > 0"
-        status="success"
-        :description="`转换成功，共 ${
-          content.split('\n').length
-        } 条`"
-      >
+      <n-result v-if="content.length > 0" status="success" :description="`转换成功，共 ${content.split('\n').length
+    } 条`">
         <template #footer>
           <n-button :on-click="downloadFile">下载</n-button>
         </template>

@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import * as naiveui from "naive-ui";
-
-const { NSpace } = naiveui;
+import { NSpace }  from "naive-ui";
 </script>
 
 <template>

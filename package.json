@@ -2,11 +2,13 @@
   "name": "home",
   "description": "homepage of sbsrf",
   "version": "0.1.0",
+  "type": "module",
   "author": "",
   "scripts": {
     "sbkd": "cd public && curl -L https://github.com/sbsrf/sbkd/releases/download/v0.0.1-alpha/sbkd.zip -O && unzip sbkd.zip && rm sbkd.zip",
+    "copy_rimejs":"/bin/cp -f src/rime.js public/rime.js",
     "start": "vitepress dev",
-    "build": "npm run sbkd && vitepress build",
+    "build": "npm run sbkd && npm run copy_rimejs && vitepress build",
     "preview": "vitepress preview"
   },
   "devDependencies": {

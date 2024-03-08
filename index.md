@@ -15,7 +15,7 @@ hero:
       link: /about/
     - theme: alt
       text: 在线体验
-      link: /sbkd
+      link: /sbkd/
     - theme: alt
       text: 立刻下载
       link: https://gitee.com/sbxlm/sbxlm/releases
@@ -33,7 +33,9 @@ import MaxWidthWrapper from './components/MaxWidthWrapper.vue'
 import Statistics from './components/Statistics.vue'
 </script>
 
-<Statistics />
+<ClientOnly>
+  <Statistics />
+</ClientOnly>
 
 <MaxWidthWrapper>
 <img src="https://singbit.pages.dev/images/slice22.webp" loading="lazy" alt="特性集锦">
