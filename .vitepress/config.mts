@@ -143,6 +143,9 @@ export default defineConfig({
       { rel: "icon", href: "/images/avatar.svg", type: "image/svg+xml" },
     ],
   ],
+  markdown: {
+    math: true,
+  },
   vite: {
     ssr: {
       noExternal: ["naive-ui", "vueuc", "date-fns"],
