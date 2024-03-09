@@ -4,7 +4,12 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "声笔输入法",
   description: "顶功输入新体验",
+  lang: "zh-Hans",
   themeConfig: {
+    outlineTitle: "本页大纲",
+    sidebarMenuLabel: "文档目录",
+    returnToTopLabel: "返回顶部",
+    outline: [2, 3],
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "主页", link: "/" },
@@ -14,7 +19,26 @@ export default defineConfig({
       { text: "练习", link: "/sbtf/" },
       { text: "工具", link: "/sbgj/" },
     ],
-
+    search: {
+      provider: "local",
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索文档",
+            buttonAriaLabel: "搜索文档",
+          },
+          modal: {
+            noResultsText: "无法找到相关结果",
+            resetButtonTitle: "清除查询条件",
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+              closeText: "关闭",
+            },
+          },
+        },
+      },
+    },
     sidebar: {
       "/": [
         {
@@ -104,11 +128,9 @@ export default defineConfig({
             { text: "小狼毫声笔专版一键部署程序制作完成", link: "/posts/xlhyjbs.md" },
           ],
         },
-      ]
+      ],
     },
-    socialLinks: [
-      { icon: "github", link: "https://github.com/sbsrf/sbsrf" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/sbsrf/sbsrf" }],
   },
   rewrites: {
     "docs/:page/index.md": ":page/index.md",
@@ -116,11 +138,14 @@ export default defineConfig({
   },
   appearance: "force-dark",
   head: [
-    ['link', { rel: 'icon', href: '/images/avatar.svg', type: 'image/svg+xml' }],
+    [
+      "link",
+      { rel: "icon", href: "/images/avatar.svg", type: "image/svg+xml" },
+    ],
   ],
   vite: {
     ssr: {
-      noExternal: ["naive-ui","vueuc","date-fns"],
+      noExternal: ["naive-ui", "vueuc", "date-fns"],
     },
   },
 });
