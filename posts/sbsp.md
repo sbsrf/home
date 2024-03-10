@@ -3,6 +3,64 @@ title: 声笔三拼（概念版）介绍
 date: 2024-02-25
 ---
 
+<script setup>
+import Practice from '../components/Practice.vue'
+
+const shengma = Object.entries({
+  zh: 'w',
+  ch: 'y',
+  sh: 'v',
+  零开: 'r',
+  零合: 's',
+  零齐: 'f',
+  零撮: 'k'
+});
+
+const yunma = Object.entries({
+  // 开口
+  a: 'a',
+  ai: 'ai',
+  ao: 'au',
+  an: 'aa',
+  ang: 'ao',
+  e: 'e',
+  ei: 'ei',
+  en: 'ea',
+  eng: 'eo',
+  er: 'i',
+  o: 'o',
+  ou: 'ou',
+  ong: 'oo',
+  // 合口
+  u: 'u',
+  ua: 'i',
+  uai: 'ii',
+  uan: 'ia',
+  uang: 'io',
+  uo: 'o',
+  uei: 'ui',
+  uen: 'ua',
+  ueng: 'uo',
+  // 齐齿
+  i: 'i',
+  ia: 'u',
+  iao: 'uu',
+  ian: 'ua',
+  iang: 'uo',
+  ie: 'o',
+  in: 'ia',
+  ing: 'io',
+  io: 'e',
+  iong: 'eo',
+  iou: 'eu',
+  // 撮口
+  ü: 'e',
+  üan: 'aa',
+  üe: 'a',
+  ün: 'ea',
+})
+</script>
+
 ## 引言
 
 声笔拼音和声笔简整是声笔系列码中简单高效的代表，在连续文本上有很大的优势。但是，在实际使用中也有一些不理想的地方：
@@ -55,6 +113,10 @@ zh ch sh r z c s
 
 总结：零声母分为四份，分别与四个非零声母共用一个声码。
 
+### 声码练习
+
+<Practice :data="shengma" name="sbsp-shengma" />
+
 ### 韵码
 
 《汉语拼音方案》中，每个韵母都可以分析为介音、主元音、韵尾三部分。韵尾可能有也可能没有，比如 `ba` 这样的音节就没有韵尾，而 `bai, ban, bang` 分别具有韵尾 `-i`, `-n`, `-ng`。
@@ -66,6 +128,10 @@ zh ch sh r z c s
 有一个韵母需要特别注意，就是全拼中的 `iu` 实际上是 `iou` 的缩写形式，在本案中是用原形来编码的，分析为 `io + u`，韵码是 `eu`。如「就」的拼写是 `jeu` 而不是 `jiu`，「有」的拼写是 `feu` 而不是 `fiu`。
 
 图中有 10 个音节的示例，对照着看很容易掌握三拼的拼法。针对和双拼拼法差异较大的一些零声母音节，附录中有[更多示例](#零声母音节的拼写示例)。
+
+### 韵码练习
+
+<Practice :data="yunma" name="sbsp-yunma" />
 
 ### 笔画码
 

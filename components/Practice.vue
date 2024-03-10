@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";
 import { supermemo, SuperMemoItem, SuperMemoGrade } from "supermemo";
-import { computed, onMounted, onUnmounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { shuffle } from "lodash-es";
 import {
   NButton,
@@ -19,69 +19,53 @@ import {
   darkTheme,
 } from "naive-ui";
 
+const props = defineProps<{
+  name: string;
+  data: [string, string][];
+}>();
+
 interface Radical extends SuperMemoItem {
   radical: string;
   key: string;
   due: number;
 }
 
-const data = {
-  q: "气欠犬犭青其日曰攴",
-  w: "韦文瓦王攵夂夊亠韋",
-  r: "人亻",
-  t: "田土士",
-  y: "又用业页頁衣羊言讠音酉尢疋",
-  p: "片皮⺮丿彡",
-  s: "十山尸手水石矢舌身鼠示食饣飠殳豕丨厶",
-  d: "刀大歹斗鬥豆丶冫氵癶",
-  f: "方风風父缶扌",
-  g: "工弓广戈瓜革鬼骨艮宀冖",
-  h: "一户火禾黑虍",
-  j: "几己巾斤见見臼角金钅釒纟糹",
-  k: "口囗匚凵冂",
-  l: "力立龙龍里鹿耒刂忄廴辶灬卤鹵",
-  z: "乙子舟自走豸隹足⻊爪爫丬爿罒長巛",
-  x: "夕小心穴血覀辛彐糸⺍⺌",
-  c: "厂寸车車虫赤辰齿齒彳艹卝屮",
-  v: "二儿耳月羽鱼魚雨聿阝卩",
-  b: "八比贝貝白鼻卜髟勹疒丷",
-  // 告 只取上半部分，即牛字头
-  n: "女牛告鸟鳥衤礻廾止",
-  m: "马馬门門毛木皿目麻米麦麥母毋毌",
-};
-
 const makeCards = () => {
-  const radicals: Radical[] = [];
-  for (const [key, group] of Object.entries(data)) {
-    Array.from(group).forEach((radical) => {
-      radicals.push({
-        radical,
-        key,
-        due: new Date().getTime(),
-        interval: 1,
-        repetition: 0,
-        efactor: 2.5,
-      });
-    });
-  }
+  const radicals: Radical[] = props.data.map(([radical, key]) => ({
+    radical,
+    key,
+    due: new Date().getTime(),
+    interval: 1,
+    repetition: 0,
+    efactor: 2.5,
+  }));
   return shuffle(radicals);
 };
 
-let queue = ref(MinPriorityQueue.fromArray<Radical>(makeCards(), (x) => x.due));
-let current = ref<Radical | undefined>(undefined);
+const queue = ref(
+  MinPriorityQueue.fromArray<Radical>(makeCards(), (x) => x.due)
+);
+const hint = ref(false);
+const input = ref("");
+const inputRef = ref<HTMLElement | null>(null);
+const showModal = ref(false);
+const current = computed(() => queue.value.front());
+const length = computed(() => queue.value.size());
+const seen = computed(() => {
+  return queue.value.toArray().filter((item) => item.repetition > 0).length;
+});
+const familiar = computed(() => {
+  return queue.value.toArray().filter((item) => item.repetition > 1).length;
+});
 let startTime = 0;
-let hint = ref(false);
 
 const next = () => {
-  if (queue.value.isEmpty()) {
-    return;
-  }
-  current.value = queue.value.dequeue();
+  if (queue.value.isEmpty()) return;
   startTime = performance.now();
 };
 
-const preceed = () => {
-  if (!current.value) return;
+const proceed = () => {
+  input.value = "";
   let grade: SuperMemoGrade;
   if (hint.value) {
     hint.value = false;
@@ -102,11 +86,9 @@ const preceed = () => {
     ...updated,
     due: current.value.due + updated.interval * 1000 * 60 * 60 * 24,
   };
+  queue.value.dequeue();
   queue.value.enqueue(radical);
-  localStorage.setItem(
-    "super-memo-data",
-    JSON.stringify(queue.value.toArray())
-  );
+  localStorage.setItem(props.name, JSON.stringify(queue.value.toArray()));
   next();
 };
 
@@ -127,35 +109,19 @@ const discard = () => {
   next();
 };
 
-const process = (input: string) => {
-  if (!current) {
-    return;
-  }
-  if (current.value?.key === input.toLowerCase()) {
-    preceed();
-  } else {
+const process = (newInput: string) => {
+  if (current.value.key === newInput.toLowerCase()) {
+    proceed();
+  } else if (current.value.key.length === newInput.length) {
     hint.value = true;
+    input.value = "";
+  } else {
+    input.value = newInput;
   }
 };
 
-const length = computed(() => {
-  return queue.value.size();
-});
-
-const seen = computed(() => {
-  return queue.value.toArray().filter((item) => item.repetition > 0).length;
-});
-
-const familiar = computed(() => {
-  return queue.value.toArray().filter((item) => item.repetition > 1).length;
-});
-
-const cardRef = ref<HTMLElement | null>(null);
-
-const showModal = ref(false);
-
 onMounted(() => {
-  const json = localStorage.getItem("super-memo-data");
+  const json = localStorage.getItem(props.name);
   if (json) {
     queue.value = MinPriorityQueue.fromArray<Radical>(
       JSON.parse(json),
@@ -163,7 +129,7 @@ onMounted(() => {
     );
   }
   next();
-  cardRef.value?.focus();
+  inputRef.value?.focus();
 });
 </script>
 <style>
@@ -193,29 +159,26 @@ onMounted(() => {
         <n-button @click="showModal = true">使用说明</n-button>
       </div>
       <n-modal v-model:show="showModal">
-        <n-card>
+        <n-card style="max-width: 600px">
           <n-h1>使用说明</n-h1>
           <n-p>
-            程序集成了著名的
+            本程序利用
             <n-a target="_blank" href="https://supermemo.guru/wiki/SuperMemo"
               >SuperMemo</n-a
             >
-            记忆算法，能够有效的帮助用户快速且牢固的记忆声笔飞系的部首所在按键。
+            算法帮助用户快速且牢固地掌握声笔输入法的基本元素。
           </n-p>
           <n-p>
-            在（重新）开始训练时程序会将部首和对应的按键制作成一张张的卡牌，顺序是随机的。卡牌的正面是部首，背面是你需要输入的对应按键。在卡牌显示后，你要以最快的速度按下键盘上相应的按键。
+            开始训练时，程序会将练习的内容和对应的编码制作成一张张的卡牌，顺序是随机的。卡牌的正面是练习的内容，背面是你需要输入的编码。在卡牌显示后，你要以最快的速度输入相应的编码。
           </n-p>
           <n-ul>
             <n-li>
-              如果按键正确，则会自动显示下一张卡牌，且程序会根据你的响应时间来为你的记忆评级。程序会根据这个评级来安排该卡牌下次出现的时间，以便巩固你的记忆。
+              如果输入正确，则会自动显示下一张卡牌，且程序会根据你的响应时间来为你的记忆评级。程序会根据这个评级来安排该卡牌下次出现的时间，以便巩固你的记忆。
             </n-li>
-            <n-li>如果按键不正确，程序会提示你正确的按键是什么。</n-li>
+            <n-li>如果输入不正确，程序会提示你正确的按键是什么。</n-li>
           </n-ul>
           <n-p>
-            程序在运行时自动将当前进度记录到浏览器的本地存储当中，再次打开时会从本地存储中加载进度。
-            <strong
-              >这个存储是存储在本地的，所以换了浏览器之后就需要重来了。</strong
-            >
+            程序在运行时自动将当前进度记录到浏览器的本地存储当中，再次打开时会从本地存储中加载进度。该进度无法跨平台同步，请尽量使用同一浏览器来练习。
           </n-p>
         </n-card>
       </n-modal>
@@ -246,9 +209,10 @@ onMounted(() => {
             <span v-if="hint">&nbsp;[{{ current?.key }}]</span>
           </div>
           <n-input
-            value=""
-            @input="(x) => process(x)"
-            placeholder="请输入部首对应的按键"
+            ref="inputRef"
+            :value="input"
+            @input="process"
+            placeholder="请输入对应的编码"
             style="font-size: 16px"
           />
         </template>
