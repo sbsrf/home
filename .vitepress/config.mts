@@ -9,6 +9,11 @@ export default defineConfig({
     outlineTitle: "本页大纲",
     sidebarMenuLabel: "文档目录",
     returnToTopLabel: "返回顶部",
+    darkModeSwitchLabel: "主题切换",
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇",
+    },
     outline: [2, 3],
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -137,7 +142,7 @@ export default defineConfig({
     "docs/:page/index.md": ":page/index.md",
     "pages/:page/index.md": ":page/index.md",
   },
-  appearance: "force-dark",
+  appearance: "dark",
   head: [
     [
       "link",

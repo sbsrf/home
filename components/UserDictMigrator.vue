@@ -8,12 +8,12 @@ import {
   NIcon,
   NConfigProvider,
   NResult,
-  darkTheme,
 } from "naive-ui";
 
 import { FileArchive } from "@vicons/fa";
 import { CustomRequestOptions } from "naive-ui/es/upload/src/interface";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
+import { sync, theme } from "../src/util";
 
 const content = ref<string>("");
 const filename = ref<string>("");
@@ -75,10 +75,12 @@ function downloadFile() {
   a.click();
   window.URL.revokeObjectURL(url); // 避免内存泄漏
 }
+
+onMounted(sync);
 </script>
 
 <template>
-  <n-config-provider :theme="darkTheme">
+  <n-config-provider :theme="theme">
     <n-space vertical :align="'center'">
       <n-upload directory-dnd :custom-request="processFile" :accept="'.txt'">
         <n-upload-dragger>

@@ -54,10 +54,10 @@ import Statistics from './components/Statistics.vue'
 <img src="https://singbit.pages.dev/images/slice16.webp" loading="lazy" alt="方案选择">
 <img src="https://singbit.pages.dev/images/slice17.webp" loading="lazy" alt="声笔简码">
 <img src="https://singbit.pages.dev/images/slice18.webp" loading="lazy" alt="声笔飞单">
+<img src="https://singbit.pages.dev/images/slice19.webp" loading="lazy" alt="声笔飞码">
 <img src="https://singbit.pages.dev/images/slice4.webp" loading="lazy" alt="击键数分布">
 <img src="https://singbit.pages.dev/images/slice7.webp" loading="lazy" alt="字频1">
 <img src="https://singbit.pages.dev/images/slice8.webp" loading="lazy" alt="字频2">
 <img src="https://singbit.pages.dev/images/slice5.webp" loading="lazy" alt="打字效率">
-<img src="https://singbit.pages.dev/images/slice19.webp" loading="lazy" alt="声笔飞码">
 <img src="https://singbit.pages.dev/images/slice23.webp" loading="lazy" alt="可选打法">
 </MaxWidthWrapper>

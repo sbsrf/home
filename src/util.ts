@@ -1,6 +1,16 @@
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useBreakpoint } from "vooks";
 import { LambdaWorker, asyncFS } from "@libreservice/my-worker";
+import { darkTheme, lightTheme } from "naive-ui";
+
+export const theme = ref(darkTheme);
+
+export const sync = () => {
+  theme.value = document.documentElement.className.split(" ").includes("dark")
+    ? darkTheme
+    : lightTheme;
+  setTimeout(sync, 100);
+}
 
 export const imeKey = Symbol()
 export const selectIMEKey= Symbol()

@@ -18,6 +18,7 @@ import {
   NA,
   darkTheme,
 } from "naive-ui";
+import { sync, theme } from "../src/util";
 
 const props = defineProps<{
   name: string;
@@ -130,6 +131,7 @@ onMounted(() => {
   }
   next();
   inputRef.value?.focus();
+  sync();
 });
 </script>
 <style>
@@ -151,7 +153,7 @@ onMounted(() => {
 }
 </style>
 <template>
-  <n-config-provider :theme="darkTheme">
+  <n-config-provider :theme="theme">
     <n-space vertical :size="'large'">
       <div class="button-container">
         <n-button @click="restart">重新开始</n-button>

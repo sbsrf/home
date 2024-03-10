@@ -106,10 +106,6 @@
   --vp-home-hero-image-filter: blur(44px);
 }
 
-.dark {
-  --vp-c-bg: #0b0b0f;
-}
-
 @media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(56px);
