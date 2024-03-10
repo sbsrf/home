@@ -9,7 +9,7 @@ typora-root-url: ..\..\public
 
 在配置方面，声笔系列码主要是基于YAML文件来进行的，对于只习惯于图形界面的用户来可能是一个挑战。不过，一旦学会用文本来做配置，就会感觉到这种方式的强大和灵活。闯过这一关，就会如鱼得水，就能随心所欲！本文就是帮助用户克服困难，过关斩将的。
 
-声笔系列码现在有两种发行版，一种是通过定制librime而形成的魔改版，另一种是在原版rime上通过lua脚本实现的lua版。魔改版最后的版本是声笔输入法20240131版，其安装和配置方法见声笔输入法9x的安装与配置。从声笔10开始就是lua版的声笔输入法了，它直接采用原版rime，通过lua脚本来实现声笔顶功，具有高度的可定制性，而且兼容rime的原有方案，所以建议用户从今以后都采用使用lua版的声笔输入法。本文讲述的就是lua版声笔的安装与配置方法。
+声笔系列码现在有两种发行版，一种是通过定制librime而形成的魔改版，另一种是在原版rime上通过lua脚本实现的lua版。魔改版最后的版本是声笔输入法20240131版，其安装和配置方法见[声笔输入法9x的安装与配置](https://sbxlm.gitee.io/posts/声笔输入法9x的安装与配置.html)。从声笔10开始就是lua版的声笔输入法了，它直接采用原版rime，通过lua脚本来实现声笔顶功，具有高度的可定制性，而且兼容rime的原有方案，所以建议用户从今以后都采用使用lua版的声笔输入法。本文讲述的就是lua版声笔的安装与配置方法。
 
 ## 1 软件获取
 
@@ -21,11 +21,13 @@ typora-root-url: ..\..\public
 
 ### 2.1 在Windows上
 
-建议采用小狼毫0.15.0版，下载地址 https://github.com/rime/weasel/releases/tag/0.15.0 。安装小狼毫后，再到 https://github.com/sbsrf/sbsrf/releases 下载声笔输入法压缩包。将压缩包解压后，将文件squirrel、weasel和trime以外的所有文件复制到小狼毫用户rime中，同时将weasel目录里的weasel.custom.yaml也复制进去，重新部署一下就可以使用了。
+建议采用小狼毫0.15.0版，下载地址 https://github.com/rime/weasel/releases/tag/0.15.0 。安装小狼毫后，再到 https://github.com/sbsrf/sbsrf/releases 下载声笔输入法压缩包。将压缩包解压后，将文件squirrel、weasel和trime以外的所有文件复制到小狼毫用户rime中，同时将weasel目录里的weasel.custom.yaml也复制进去，重新部署一下就可以使用了。小狼毫主题的定制，请在weasel.custom.yaml中进行。
 
 ### 2.2 在Android上
 
-建议采用同文v3.2.16，下载地址 https://github.com/osfans/trime/releases/tag/v3.2.16 。安装同文后，再到 https://github.com/sbsrf/sbsrf/releases 下载声笔输入法压缩包。将压缩包解压后，将文件squirrel、weasel和trime以外的所有文件复制到同文用户设定中，同时将trime目录里的所有目录和文件也复制进去，重新部署一下，将主题调整为适配声笔的主题，就可以使用了。如果使用异常，请重启一下手机，一般就没有问题了。如果无法切换到声笔的主题，则将主题同时复制一份到build目录即可。
+建议采用同文v3.2.16，下载地址 https://github.com/osfans/trime/releases/tag/v3.2.16 。安装同文后，再到 https://github.com/sbsrf/sbsrf/releases 下载声笔输入法压缩包。将压缩包解压后，将文件squirrel、weasel和trime以外的所有文件复制到同文用户设定中，同时将trime目录里的所有目录和文件也复制进去，重新部署一下，将主题调整为适配声笔的主题，就可以使用了。
+
+如果启用时发生异常，请重启一下手机，一般就没有问题了。如果无法切换到声笔的主题，则将主题同时复制一份到build目录即可。
 
 ### 2.3 在MacOS上
 
