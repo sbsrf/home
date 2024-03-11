@@ -4,3 +4,4 @@ node_modules/
 public/ime
 public/rime.*
 public/worker.*
+public/*.png

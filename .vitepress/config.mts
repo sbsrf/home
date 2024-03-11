@@ -1,7 +1,8 @@
 import { defineConfig } from "vitepress";
+import { withPwa } from "@vite-pwa/vitepress";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withPwa(defineConfig({
   title: "声笔输入法",
   description: "顶功输入新体验",
   lang: "zh-Hans",
@@ -143,12 +144,6 @@ export default defineConfig({
     "pages/:page/index.md": ":page/index.md",
   },
   appearance: "dark",
-  head: [
-    [
-      "link",
-      { rel: "icon", href: "/images/avatar.svg", type: "image/svg+xml" },
-    ],
-  ],
   markdown: {
     math: true,
   },
@@ -157,4 +152,29 @@ export default defineConfig({
       noExternal: ["naive-ui", "vueuc", "date-fns"],
     },
   },
-});
+  pwa: {
+    mode: 'development',
+    registerType: 'autoUpdate',
+    injectRegister: 'script-defer',
+    includeAssets: ['logo.svg'],
+    manifest: {
+      name: '声笔输入法',
+      short_name: '声笔输入法',
+      theme_color: '#ffffff',
+    },
+    pwaAssets: {
+      config: true,
+    },
+    workbox: {
+      globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],
+    },
+    experimental: {
+      includeAllowlist: true,
+    },
+    devOptions: {
+      enabled: false,
+      suppressWarnings: true,
+      navigateFallback: '/',
+    },
+  },
+}));

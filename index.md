@@ -7,7 +7,7 @@ hero:
   text: 顶功输入新体验
   tagline: 简单高效、系统全面的中文输入解决方案
   image:
-    src: /images/avatar.svg
+    src: /logo.svg
     alt: sbxlm
   actions:
     - theme: brand
