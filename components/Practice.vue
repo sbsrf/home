@@ -130,7 +130,7 @@ onMounted(() => {
     );
   }
   next();
-  inputRef.value?.focus();
+  // inputRef.value?.focus();
   sync();
 });
 </script>

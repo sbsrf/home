@@ -26,16 +26,20 @@ export default withPwa(defineConfig({
       { text: "工具", link: "/sbgj/" },
     ],
     search: {
-      provider: "local",
+      provider: "algolia",
       options: {
+        appId: "4GR9IX2S72",
+        apiKey: "bec14439de51bd69534d2fcbce9ea2c5",
+        indexName: "sbxlm-gitee",
         translations: {
           button: {
             buttonText: "搜索文档",
             buttonAriaLabel: "搜索文档",
           },
           modal: {
-            noResultsText: "无法找到相关结果",
-            resetButtonTitle: "清除查询条件",
+            searchBox: {
+              resetButtonTitle: "清除查询条件",
+            },
             footer: {
               selectText: "选择",
               navigateText: "切换",
