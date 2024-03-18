@@ -29,6 +29,24 @@ date: 2024-01-29 09:00:32
   - 声笔小鹤：bysu szsi bpfd, w_ zjmw bysu!
     - 小鹤音形：bd_ yh; uum_ uizd u_ bupk fjj_ d, w_ zjn_ mwbd yh; uum
 - 汽车在望不到边际的高原上奔驰，扑入你的视野的，是黄绿错综的一条大毡子。
+  - 声笔简码：
+    - 四顶模式：qce z_ wbde bja d_ gye si bca, pru nd; syi d, s_ hla cza d ytu de zza.
+    - 三顶模式：qce z_ wbd bja d_ gye si bca, pru nd; syi d, s_ hla cza d ytu de zza.
+  - 声笔飞单：qdu cha z_ ww b_ dl ba jv d_ go yc si bde cmai, pfi rp nd; snia yla d, s_ hb lja cje zjo dy; tw de zmie za. 
+    - 五笔单字：irn_ lg_ d_ yneg i_ gc_ lp_ bf_ r_ ym_ dr_ h_ dfa_ cbn, rhy_ ty_ wq_ r_ pym_ jfc_ r, j_ amw_ xv_ qaj_ xp_ r_ g_ ts_ dd_ tfnk bb.
+  - 声笔飞码：qdch z_ wbdl bajv d_ gysi bdcm, pfi rp_ nn; snyl d, s_ hblj cjzj dy; twde zmza.
+    - 五笔字词：irlg d_ yneg i_ gc_ lpbf r_ ymdr h_ dfcb , rhy_ ty_ wq_ r_ pyjf r, j_ amw_ xv_ qaj_ xp_ r_ g_ ts_ dd_ tfnk bb.
+  - 声笔飞讯：
+    - 慢顶模式：qdcea z_ wbdea ba jv d_ go yc si bdcaa , pfi rp nn; snyia d, s_ hblaa cjzaa dy; tw de zmzai.
+    - 快顶模式：qdc3 z_ wbd3 ba jv d_ go yc si bdc2 , pfi rp nn; sny8 d, s_ hbl2 cjz2 dy; tw de zmz2.
+  - 声笔拼音：
+    - 固定模式：qice_ z_ waabuda_ biaji_ d_ gaoyuas_ beeci, puru_ nd; siye_ d, s_ hualu_ cuozoo_ d_ yitia_ da_ zaazi. 
+    - 纯顶模式：qce z_ wbda bji d_ gysa bci, pru nd; sye d, s_ hlu czo d_ yti d3 zzi.
+    - 搜狗拼音：qice_ z_ wangbudao_ bianji_ d_ gaoyuans_ benchi, puru_ nid_ shiye_ d, s_ huanglv_ cuozhong_ d_ yitiao_ da_ zhanzi.
+  - 声笔自然：qice z_ wbdk bmji d_ gkyr sh_ bfci, puru nd; siye d, s_ hdlv cozs d_ yitc da_ zjzi.
+    - 搜狗自然：
+  - 声笔小鹤：qice z_ wbdc bmji d_ gcyr sh_ bfci, puru nd; siye d, s_ hllv cozs d_ yitn da_ zjzi.
+    - 小鹤音形：
 - 黄的是土，未开垦的荒地，几十万年前由伟大的自然力堆积成功的黄土高原的外壳；
 - 绿的呢，是人类劳力战胜自然的成果，是麦田。
 - 和风吹送，翻起了一轮一轮的绿波，——这时你会真心佩服昔人所造的两个字“麦浪”，若不是妙手偶得，便确是经过锤炼的语言精华。
