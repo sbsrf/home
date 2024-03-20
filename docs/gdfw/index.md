@@ -44,9 +44,9 @@ date: 2024-01-29 09:00:32
     - 纯顶模式：qce z_ wbda bji d_ gysa bci, pru nd; sye d, s_ hlu czo d_ yti d3 zzi.
     - 搜狗拼音：qice_ z_ wangbudao_ bianji_ d_ gaoyuans_ benchi, puru_ nid_ shiye_ d, s_ huanglv_ cuozhong_ d_ yitiao_ da_ zhanzi.
   - 声笔自然：qice z_ wbdk bmji d_ gkyr sh_ bfci, puru nd; siye d, s_ hdlv cozs d_ yitc da_ zjzi.
-    - 搜狗自然：
+    - 搜狗自然：qiie z_ whbudk_ bmji_ gkyruh_ bfii, puru_ nide_ uiye_ d, ui hdlv_ cozs_ d_ yitc_ da_ vjzi.
   - 声笔小鹤：qice z_ wbdc bmji d_ gcyr sh_ bfci, puru nd; siye d, s_ hllv cozs d_ yitn da_ zjzi.
-    - 小鹤音形：
+    - 小鹤音形：qiie z_ whbudc_ bmji_ gcyruh_ bfii, puru_ nide_ uiye_ d, ui hllv_ cozs_ d_ yitn_ da_ zjzi.
 - 黄的是土，未开垦的荒地，几十万年前由伟大的自然力堆积成功的黄土高原的外壳；
 - 绿的呢，是人类劳力战胜自然的成果，是麦田。
 - 和风吹送，翻起了一轮一轮的绿波，——这时你会真心佩服昔人所造的两个字“麦浪”，若不是妙手偶得，便确是经过锤炼的语言精华。

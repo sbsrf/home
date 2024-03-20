@@ -161,8 +161,6 @@ typora-root-url: ..\..\public
 
 > 厂cea 恭gea 赫hea 框kea 抹mea 撵nea 飘pea 榕rea 松sea 推tea 溃koa 叠dae 缚fae 妞nae 夺dee 构gee 枯kee 蕊ree 捱vee 蝶die 冈gie 呵hie 吭kie 墨mie 囔nie 瞳tie 峨vie 怩noe 潭toe 堡pue 媚mai 奴nai 跋bii 虫cii 迪dii 贩fii 咕gii 喊hii 喀kii 哩lii 眸mii 喏nii 呸pii 峭qii 踢tii 噢vii 吻wii 响xii 叶yii 淡doi 究joi 窟koi 泞noi 泡poi 滩toi 亡woi 写xoi 站zoi 牡mui 剥bao 缝fao 绘hao 妮nao 骈pao 臀tao 嫒vao 纸zao 朝ceo 掉deo 芙feo 革geo 魂heo 扩keo 拈neo 秦qeo 揉reo 友yeo 崩bio 齿cio 盯dio 蜂fio 跪gio 睛jio 叩kio 龄lio 曼mio 咛nio 咆pio 跄qio 喔vio 唯wio 版buo 仞ruo 绑bau 纷fau 艮gau 骇hau 陵lau 纵zau 获heu 捺neu 鄙biu 晨ciu 典diu 吩fiu 贵giu 呼hiu 昆kiu 略liu 盟miu 呐niu 啪piu 遣qiu 吐tiu 哎viu 吴wiu 呀yiu 止ziu 窥kou 泼pou 涛tou 傅fuu 锅guu 朦muu 猱nuu 偌ruu 顺suu 透tuu 迩vuu 魏wuu
 
-为了便于用户对不满意的飞单缩减码进行调整，用户可以在fmzdy.dict中添加条目来新增或者替代现有的缩减码。
-
 #### 2.2.6 部首编码
 
 在[偏旁部首](#2-1-2-偏旁部首)一节，介绍了部首的类型、助记和位置，知道部首分为成字部首和非成字部首。本节对部首进行细分，并讨论它们的编码，这是学习飞单的一个难点和重点。成字部首细分为常规部首、声笔部首、变形部首和特殊部首。非成字部首细分为易显部首和难显部首。
