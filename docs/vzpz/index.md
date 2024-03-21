@@ -17,7 +17,7 @@ typora-root-url: ..\..\public
 
 ## 2 安装方法
 
-声笔输入法的安装方法因操作系统而异。以下只讲解基础包（sbsrf）的安装，扩展包（sbsrf-extra）的安装方法是相同的，只需要复盖一下即可，就不再赘述。
+声笔输入法的安装方法因操作系统而异。以下只讲解基础包（sbsrf）的安装，扩展包（sbsrf-extra）的安装方法是相同的，只需要复盖一下即可，就不再赘述。也可以采用Poto开发的[声笔一键](https://getquicker.net/Sharedaction?code=a570c0c0-1a11-409b-24e3-08dc481c770b)安装方式。
 
 ### 2.1 在Windows上
 
