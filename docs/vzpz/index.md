@@ -15,9 +15,11 @@ typora-root-url: ..\..\public
 
 为了便于用户下载使用，声笔系列码已经发布在了网上，可以通过[github](https://github.com/sbsrf/home/releases)或者[码云](https://gitee.com/sbxlm/sbxlm/releases)下载。使用iOS的用户，可以直接在苹果应用商店下载仓输入法。网上其它地方查找到的版本太陈旧，下载站点转载太多，也不一定安全，不建议使用。遇到问题，可到声笔QQ交流群（780510469、783734487、445906697和728093309）反映和寻求解决办法。
 
+Poto开发了一些声笔的小工具，请到[这里下载](https://getquicker.net/Sharedaction?code=a570c0c0-1a11-409b-24e3-08dc481c770b)。
+
 ## 2 安装方法
 
-声笔输入法的安装方法因操作系统而异。以下只讲解基础包（sbsrf）的安装，扩展包（sbsrf-extra）的安装方法是相同的，只需要复盖一下即可，就不再赘述。也可以采用Poto开发的[声笔一键](https://getquicker.net/Sharedaction?code=a570c0c0-1a11-409b-24e3-08dc481c770b)安装方式。
+声笔输入法的安装方法因操作系统而异。以下只讲解基础包（sbsrf）的安装，扩展包（sbsrf-extra）的安装方法是相同的，只需要复盖一下即可，就不再赘述。
 
 ### 2.1 在Windows上
 
