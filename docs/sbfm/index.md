@@ -157,11 +157,11 @@ typora-root-url: ..\..\public
 
 ### 3.6 LUA脚本
 
-详见：[LUA脚本](https://sbxlm.gitee.io/sbjc/#7-LUA脚本)
+详见：[LUA脚本](https://sbxlm.gitee.io/sbjc/#_7-LUA脚本)
 
 ### 3.7 设置选项
 
-详见：[设置选项](https://sbxlm.gitee.io/sbjc/#8-设置选项)
+详见：[设置选项](https://sbxlm.gitee.io/sbjc/#_8-设置选项)
 
 ### 3.8 字词混输
 
@@ -283,7 +283,7 @@ typora-root-url: ..\..\public
 
 如果要临时使用增强模式，在电脑上可以用Ctrl+~或F4，在手机上直接点击状态栏的「常规/增强」项，就可以切换状态了。如果要将增强模式设置为默认状态，只要将sbfm.schema.yaml文件中的is_enhanced开关项的reset值由0改为1，并重新部署一下就可以了。
 
-数选字词的基本用法请参见[飞单增强模式](https://sbxlm.gitee.io/sbfd/#5-%E5%A2%9E%E5%BC%BA%E6%A8%A1%E5%BC%8F)。这里只讲飞码特有的情况，也就是说在第三码和第四码后接数字的情况。
+数选字词的基本用法请参见[飞单增强模式](https://sbxlm.gitee.io/sbfd/#_5-%E5%A2%9E%E5%BC%BA%E6%A8%A1%E5%BC%8F)。这里只讲飞码特有的情况，也就是说在第三码和第四码后接数字的情况。
 
 例如，在输入「两极」时，通常得用`lh_j3`，但是由于有了延迟顶屏，就只用 lhj3 就可以输入了。
 
