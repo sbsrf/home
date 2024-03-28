@@ -13,7 +13,7 @@ typora-root-url: ..\..\public
 1. 从[雾凇拼音](https://github.com/iDvel/rime-ice)词库生成的 150 万扩展词库，分为 `sbpy.ext` 和 `sbpy.tencent` 两个文件；
 2. 从 [rime-pure](https://github.com/SivanLaai/rime-pure) 获得的华宇拼音 v7 语言模型，用于智能组句以及上下文自动码长调整；
 
-安装扩展包前，请先安装[声笔输入法](https://github.com/sbsrf/sbsrf/releases)中与声笔拼音相关的全部文件。然后，您有两种选择来安装扩展包：
+安装扩展包前，请先安装声笔输入法中与声笔拼音相关的全部文件。然后，您有两种选择来安装扩展包：
 
 1. 二进制安装：从 Releases 中下载 zip 压缩包，解压后复制到用户文件夹，重新部署即可；
 2. 源码安装：下载本仓库的文件，复制到用户文件夹，重新部署即可。
@@ -40,7 +40,7 @@ typora-root-url: ..\..\public
 
 ## 2 声笔三拼
 
-请参见[声笔三拼](https://sbxlm.gitee.io/posts/sbsp.html)
+请参见[声笔三拼](../posts/sbsp.html)
 
 ## 3 声笔自整
 

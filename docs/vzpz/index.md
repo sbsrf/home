@@ -67,7 +67,7 @@ Poto开发了一些声笔的小工具，请到[这里下载](https://getquicker.
 
 前端可以采用 [ibus-rime](https://github.com/rime/ibus-rime) 或者 [fcitx5-rime](https://github.com/fcitx/fcitx5-rime)。注意运行声笔系列码的 lua 脚本至少需要 librime 1.8.5，如果你使用的 Linux 发行版包管理器中的 librime 大于等于 1.8.5 则可以直接安装，否则需要自己编译安装 librime（编译时建议使用最新的发行版 [librime 1.10.0](https://github.com/rime/librime/tree/1.10.0)。
 
-安装完毕后，再到 https://github.com/sbsrf/sbsrf/releases 下载声笔输入法压缩包。将压缩包解压后，将文件squirrel、weasel和trime以外的所有文件复制到用户目录中，重新部署一下就可以使用了。
+将声笔输入法方案文件压缩包（sbsrfxxxx）解压，将文件squirrel、weasel和trime以外的所有文件复制到用户目录中，重新部署一下就可以使用了。
 
 ## 3 方案选择
 
@@ -95,7 +95,7 @@ Windows电脑上，如果遇到卸载不了或者卸载不干净的输入法，�
 
 ## 6 数据迁移
 
-声笔输入法10采用的用户词典格式与 9.x 有所不同，为了能够在声笔10的方案中继续使用您所积累的调频和造词记录，您可以使用在线的声笔[用户词典迁移工具](https://sbxlm.gitee.io/sbgj/)。
+声笔输入法10采用的用户词典格式与 9.x 有所不同，为了能够在声笔10的方案中继续使用您所积累的调频和造词记录，您可以使用在线的声笔[用户词典迁移工具](../sbgj/)。
 
 ## 7 配置与定制
 
