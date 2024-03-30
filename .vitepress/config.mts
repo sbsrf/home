@@ -69,7 +69,7 @@ export default withPwa(defineConfig({
             { text: "声笔飞单", link: "/sbfd/" },
             { text: "声笔飞码", link: "/sbfm/" },
             { text: "声笔飞讯", link: "/sbfx/" },
-            { text: "其它方案", link: "/qtfv/" },
+            { text: "声笔扩展", link: "/sbkz/" },
           ],
         },
         {
