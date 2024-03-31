@@ -59,8 +59,6 @@ typora-root-url: ..\..\public
 
 ![image-20230813150115415](/images/image-20230813150115415.png)
 
-
-
 ![img](/images/09a0b6132bc3bd5f7db32b5a11766b5c.jpg)
 
 ##### 2.1.2.3 部首位置
