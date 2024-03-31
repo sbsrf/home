@@ -69,7 +69,6 @@ export default withPwa(defineConfig({
             { text: "声笔拼音", link: "/sbpy/" },
             { text: "声笔自然", link: "/sbzr/" },
             { text: "声笔小鹤", link: "/sbxh/" },
-            { text: "声笔扩展", link: "/sbkz/" },
           ],
         },
         {
