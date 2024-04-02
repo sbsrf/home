@@ -6,7 +6,6 @@ tags:
 - 简码
 - 顶功
 - 声笔
-- 简整
 typora-root-url: ..\..\public
 ---
 
