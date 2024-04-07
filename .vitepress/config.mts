@@ -82,6 +82,15 @@ export default withPwa(defineConfig({
             { text: "版本历史", link: "/fzlc/" },
           ],
         },
+        {
+          text: "声笔QQ群",
+          items: [
+            { text: "783734487" },
+            { text: "728093309" },
+            { text: "445906697" },
+            { text: "780510469" },
+          ],
+        },
       ],
       "/posts/": [
         {
