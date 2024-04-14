@@ -62,16 +62,31 @@ export default withPwa(defineConfig({
         {
           text: "输入方案",
           items: [
-            { text: "声笔简码", link: "/sbjm/" },
-            { text: "声笔简整", link: "/sbjz/" },
-            { text: "声笔飞单", link: "/sbfd/" },
-            { text: "声笔飞码", link: "/sbfm/" },
-            { text: "声笔飞讯", link: "/sbfx/" },
+            {
+              text: "声笔简系", link:"/sbj/",
+              items: [
+                { text: "声笔简码", link: "/sbjm/" },
+                { text: "声笔简整", link: "/sbjz/" }, 
+              ],
+            },
+            {
+              text: "声笔飞系", link:"/sbf/",
+              items: [
+                { text: "声笔飞单", link: "/sbfd/" },
+                { text: "声笔飞码", link: "/sbfm/" },
+                { text: "声笔飞讯", link: "/sbfx/" },
+              ],
+            },
             { text: "声笔拼音", link: "/sbpy/" },
-            { text: "声笔自然", link: "/sbzr/" },
-            { text: "声笔自整", link: "/sbzz/" },
-            { text: "声笔小鹤", link: "/sbxh/" },
-            { text: "声笔鹤整", link: "/sbhz/" },
+            {
+              text: "声笔双拼", link:"/sbs/",
+              items: [            
+                { text: "声笔自然", link: "/sbzr/" },
+                { text: "声笔自整", link: "/sbzz/" },
+                { text: "声笔小鹤", link: "/sbxh/" },
+                { text: "声笔鹤整", link: "/sbhz/" },
+              ],
+            },
           ],
         },
         {

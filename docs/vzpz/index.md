@@ -11,7 +11,7 @@ typora-root-url: ..\..\public
 
 ## 1 软件获取
 
-为了便于用户下载使用，声笔系列码已经发布在了网上，可以通过 [GitHub](https://github.com/sbsrf/home/releases) 或者[码云](https://gitee.com/sbxlm/sbxlm/releases)下载。使用 iOS 的用户，可以直接在苹果应用商店下载仓输入法。网上其它地方查找到的版本太陈旧，下载站点转载太多，也不一定安全，不建议使用。遇到问题，可到声笔 QQ 交流群（783734487, 728093309, 445906697和780510469）反映和寻求解决办法。Poto 开发了一些声笔的小工具，请到[这里下载](https://getquicker.net/Sharedaction?code=a570c0c0-1a11-409b-24e3-08dc481c770b)。
+为了便于用户下载使用，声笔系列码已经发布在了网上，可以通过 [GitHub](https://github.com/sbsrf/home/releases) 或者[码云](https://gitee.com/sbxlm/sbxlm/releases)下载。使用 iOS 的用户，可以直接在苹果应用商店下载仓输入法。网上其它地方查找到的版本太陈旧，下载站点转载太多，也不一定安全，不建议使用。遇到问题，可到声笔 QQ 交流群（783734487, 728093309, 445906697和780510469）反映和寻求解决办法。Poto 开发了声笔输入法的Windows一键安装程序和其它一些小工具，请到[这里下载](https://getquicker.net/Sharedaction?code=a570c0c0-1a11-409b-24e3-08dc481c770b)。Hotleave开发了比较通用的声笔输入法自动更新重新，详见[sbsrf-update](https://gitee.com/hotleave/sbsrf-update)。
 
 ## 2 安装方法
 
