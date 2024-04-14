@@ -93,7 +93,6 @@ export default withPwa(defineConfig({
           text: "附录",
           items: [
             { text: "常见问题", link: "/faq/" },
-            { text: "跟打范文", link: "/gdfw/" },
             { text: "版本历史", link: "/fzlc/" },
           ],
         },
