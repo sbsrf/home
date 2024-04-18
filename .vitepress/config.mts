@@ -65,7 +65,7 @@ export default withPwa(defineConfig({
             {
               text: "声笔简系", link:"/sbj/",
               items: [
-                { text: "声笔简拼", link: "/sbjp/" }, 
+                { text: "声笔简整", link: "/sbjz/" }, 
                 { text: "声笔简码", link: "/sbjm/" },
               ],
             },
