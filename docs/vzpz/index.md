@@ -11,7 +11,7 @@ typora-root-url: ..\..\public
 
 ## 1 软件获取
 
-为了便于用户下载使用，声笔系列码已经发布在了网上，可以通过 [GitHub](https://github.com/sbsrf/home/releases) 或者[码云](https://gitee.com/sbxlm/sbxlm/releases)下载。使用 iOS 的用户，可以直接在苹果应用商店下载仓输入法。网上其它地方查找到的版本太陈旧，下载站点转载太多，也不一定安全，不建议使用。遇到问题，可到声笔 QQ 交流群（783734487, 728093309, 445906697和780510469）反映和寻求解决办法。Poto 开发了声笔输入法的Windows一键安装程序和其它一些小工具，请到[这里下载](https://getquicker.net/Sharedaction?code=a570c0c0-1a11-409b-24e3-08dc481c770b)。Hotleave开发了比较通用的声笔输入法自动更新重新，详见[sbsrf-update](https://gitee.com/hotleave/sbsrf-update)。
+为了便于用户下载使用，声笔系列码已经发布在了网上，可以通过 [GitHub](https://github.com/sbsrf/home/releases) 下载。使用 iOS 的用户，可以直接在苹果应用商店下载仓输入法。网上其它地方查找到的版本太陈旧，下载站点转载太多，也不一定安全，不建议使用。遇到问题，可到声笔 QQ 交流群（783734487, 728093309, 445906697和780510469）反映和寻求解决办法。Poto 开发了声笔输入法的Windows一键安装程序和其它一些小工具，请到[这里下载](https://getquicker.net/Sharedaction?code=a570c0c0-1a11-409b-24e3-08dc481c770b)。Hotleave开发了比较通用的声笔输入法自动更新重新，详见[sbsrf-update](https://gitee.com/hotleave/sbsrf-update)。
 
 ## 2 安装方法
 
@@ -29,7 +29,7 @@ typora-root-url: ..\..\public
 
 ### 2.2 在 Android 上
 
-解压 trime 压缩包，安装同文输入法，然后将 apk 以外的所有东西复制到用户文件夹rime，重新部署一下，将主题切换为适配声笔的主题，以方便操作。
+解压 trime 压缩包，安装同文输入法，然后将 apk 以外的所有东西复制到用户文件夹rime，重新部署一下，将主题切换为适配声笔的主题，以方便操作。安装的具体过程可以参见B站的[声笔安卓版安装演示](https://www.bilibili.com/video/BV1SH4y1N7pQ/)。
 
 ### 2.3 在 macOS 上
 
@@ -143,7 +143,7 @@ Rime的图形界面能做的事情是有限的，在Rime的世界里是文本为
 
 ![img](/images/334D71F80182AC6328611305712A0BCC.jpg)
 
-除了以上主题之外，还有一些声笔用户和皮肤大佬，如莫颜、强的、单单和Poto等也专门为声笔定制了皮肤，感兴趣的朋友可到声笔QQ群里下载使用。
+除了以上主题之外，还有一些声笔用户和皮肤大佬，如莫颜、强的、单单和Poto等也专门为声笔定制了皮肤，感兴趣的朋友可到声笔QQ群里下载使用。这里是[莫言声笔主题集锦](http://leisure.ysepan.com/)。
 
 ![img](/images/F90140010FB058AC68841CD49C588E94.jpg)
 
