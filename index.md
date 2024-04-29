@@ -18,7 +18,7 @@ hero:
       link: /sbkd/
     - theme: alt
       text: 立刻下载
-      link: https://gitee.com/sbxlm/sbxlm/releases
+      link: https://github.com/sbsrf/home/releases
 # features:
 #   - title: Feature A
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
