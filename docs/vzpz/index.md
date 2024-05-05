@@ -26,7 +26,7 @@ typora-root-url: ..\..\public
 
 ![image-20230620083039211](/images/image-20230620083039211.png)
 
-- 安装小狼毫后，将 weasel 压缩包里的 `weasel.custom.yaml` 也复制到新生成的用户文件夹rime中。若要定制小狼毫主题，也请在 `weasel.custom.yaml` 中进行。
+- 安装小狼毫后，将 weasel 压缩包里的 `weasel.custom.yaml` 和`sbsrf.ico`也复制到新生成的用户文件夹rime中。若要定制小狼毫主题，也请在 `weasel.custom.yaml` 中进行。
 - 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹rime中，重新部署一下就安装好了声笔输入法的方案。
 - 若需要在整句方案中使用语言模型，可再将 `octagram.zip` 压缩包中的文件复制到用户文件夹rime中，并重新部署。
 - 如果备份了userdb目录，再将它们复制回rime文件夹中。
