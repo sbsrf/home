@@ -26,7 +26,7 @@ typora-root-url: ..\..\public
 
 ![image-20230620083039211](/images/image-20230620083039211.png)
 
-- 安装小狼毫后，将 weasel 压缩包里的 `weasel.custom.yaml` 和`sbsrf.ico`也复制到新生成的用户文件夹rime中。若要定制小狼毫主题，也请在 `weasel.custom.yaml` 中进行。
+- 安装小狼毫后，将 weasel 压缩包里的 `weasel.custom.yaml` 和`sbxlm.ico`也复制到新生成的用户文件夹rime中。若要定制小狼毫主题，也请在 `weasel.custom.yaml` 中进行。
 - 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹rime中，重新部署一下就安装好了声笔输入法的方案。
 - 若需要在整句方案中使用语言模型，可再将 `octagram.zip` 压缩包中的文件复制到用户文件夹rime中，并重新部署。
 - 如果备份了userdb目录，再将它们复制回rime文件夹中。
@@ -35,14 +35,14 @@ typora-root-url: ..\..\public
 
 安装请按照如下步骤进行。安装的具体过程还可以参见B站的[声笔安卓版安装演示](https://www.bilibili.com/video/BV1SH4y1N7pQ/)。
 
-- 如果已经安装过同文，打开用户目录rime，备份其中各方案的userdb目录，然后删除整个rime文件夹。
+- 如果已经安装过同文，打开用户文件夹rime，备份其中各方案的userdb目录，然后删除整个rime文件夹。
 - 安装trime 压缩包里的同文输入法apk，给予足够的权限，部署一下，以便生成rime文件夹。
-- 将 apk 以外的所有东西复制到rime文件夹，重新部署一下。
+- 将 apk 以外的所有东西复制到用户文件夹rime，重新部署一下。
 - 将主题切换为适配声笔的主题，以方便使用声笔特殊功能。
 - 进入键盘设置，将点击候选词开启，以便点选上屏候选词。
-- 将 `sbsrf.zip` 压缩包中的所有内容复制到rime文件夹中，重新部署一下就安装好了声笔输入法的方案。
+- 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹rime中，重新部署一下就安装好了声笔输入法的方案。
 - 若需要在整句方案中使用语言模型，可再将 `octagram.zip` 压缩包中的文件复制到用户文件夹rime中，并重新部署。
-- 如果备份了userdb目录，再将它们复制回rime文件夹中。
+- 如果备份了userdb目录，再将它们复制回用户文件夹rime中。
 
 ### 2.3 在 macOS 上
 
