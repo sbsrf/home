@@ -111,6 +111,7 @@ export default withPwa(defineConfig({
         {
           text: "文章",
           items: [
+            { text: "如何在Deepin上安装声笔输入法", link: "/posts/如何在Deepin上安装声笔输入法.md" },
             { text: "冰雪四拼", link: "/posts/冰雪四拼.md" },
             { text: "声笔输入法9x的安装与配置", link: "/posts/声笔输入法9x的安装与配置.md" },
             { text: "中文输入模式", link: "/posts/中文输入模式.md" },
