@@ -1,6 +1,6 @@
 
 <script setup>
-import Practice from '../components/Practice.vue'
+import Practice from '../../components/Practice.vue'
 
 const shengma = Object.entries({
   zh: 'w',
