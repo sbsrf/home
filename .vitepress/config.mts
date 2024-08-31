@@ -111,6 +111,7 @@ export default withPwa(defineConfig({
         {
           text: "文章",
           items: [
+            { text: "如何用好简拼", link: "/posts/如何用好简拼.md" },
             { text: "声笔飞讯竞速怎么设置好", link: "/posts/声笔飞讯竞速怎么设置好.md" },
             { text: "如何在Deepin上安装声笔输入法", link: "/posts/如何在Deepin上安装声笔输入法.md" },
             { text: "冰雪四拼", link: "/posts/冰雪四拼.md" },
