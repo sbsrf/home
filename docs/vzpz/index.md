@@ -80,7 +80,7 @@ macOS 目前有两个前端，分别是第三方的小企鹅和官方的鼠须�
 
 ### 2.5 在 Linux 上
 
-前端可以采用 [fcitx5-rime](https://github.com/fcitx/fcitx5-rime)（推荐）或 [ibus-rime](https://github.com/rime/ibus-rime)。注意运行声笔系列码的 lua 脚本至少需要 librime 1.8.5，如果你使用的 Linux 发行版包管理器中的 librime 大于等于 1.8.5 则可以直接安装，否则需要自己编译安装 librime（编译时建议使用最新的发行版 [librime 1.10.0](https://github.com/rime/librime/tree/1.10.0)。
+前端可以采用 [fcitx5-rime](https://github.com/fcitx/fcitx5-rime)（推荐）或 [ibus-rime](https://github.com/rime/ibus-rime)。注意运行声笔系列码的 lua 脚本至少需要 librime 1.8.5，如果你使用的 Linux 发行版包管理器中的 librime 大于等于 1.8.5 则可以直接安装，否则需要自己编译和安装 [librime](https://github.com/rime/librime)。
 
 ## 3 方案选择
 
