@@ -32,7 +32,9 @@ typora-root-url: ..\..\public
 
 ### 2.2 在 Android 上
 
-安装请按照如下步骤进行。安装的具体过程还可以参见B站的[声笔安卓版安装演示](https://www.bilibili.com/video/BV1SH4y1N7pQ/)。
+#### 2.2.1 同文
+
+安装请按照如下步骤进行。安装的具体过程还可以参见B站的[声笔安卓版安装演示](https://www.bilibili.com/video/BV1d31QYxEhk/)。
 
 - 如果已经安装过同文，打开用户文件夹rime，备份其中各方案的userdb目录，然后删除整个rime文件夹。
 - 安装trime 压缩包里的同文输入法apk，给予足够的权限，部署一下，以便生成rime文件夹。
@@ -42,17 +44,30 @@ typora-root-url: ..\..\public
 - 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹rime中，重新部署一下就安装好了声笔输入法的方案。
 - 如果备份了userdb目录，再将它们复制回用户文件夹rime中。
 
+#### 2.2.2 小企鹅
+
+安装请按照如下步骤进行。安装的具体过程还可以参见B站的[声笔小企鹅安装教程](https://www.bilibili.com/video/BV1os2FYUEmx/)。
+
+- 如果已经安装过小企鹅，打开用户文件夹rime，备份其中各方案的userdb目录，然后删除整个rime文件夹。
+- 安装fcitx5-android压缩包里的小企鹅46键.apk，给予足够的权限。
+- 安装fcitx5-android压缩包里的小企鹅中州韵插件.apk。
+- 打开安装好小企鹅输入法5 app，进入输入法选项，添加中州韵，如果不用已有的拼音，可以将其删除。
+- 通过键盘选项可以自行根据需要进行一些设置，如按键音、空格键行为、键盘高度等
+- 通过主题选项可以选择主题，并进行相关配置。
+- 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹rime中，该文件夹的路径为内部存储/Android/data/org.fcitx.fcitx5.android/files/data/rime。
+- 如果备份了userdb目录，再将它们复制回用户文件夹rime中。
+
 ### 2.3 在 macOS 上
 
 macOS 目前有两个前端，分别是第三方的小企鹅和官方的鼠须管。前者无需更改皮肤就可以支持正确的候选显示，且有更加易用的状态栏菜单，因此推荐这一前端。
 
-#### 小企鹅前端
+#### 2.3.1 小企鹅
 
 打开[小企鹅 macOS 下载页](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)，选择「中州韵版」。安装完成后，将sbsrf.zip中的声笔方案文件复制到 `~/.local/share/fcitx5/rime`，重新部署后就可使用了。
 
-#### 鼠须管前端
+#### 2.3.2 鼠须管
 
-解压 squirrel 压缩包，安装主程序（一般会重启系统），然后打开用户设定文件夹，将压缩包里的 `squirrel.custom.yaml` 复制进去。打开用户设定，将sbsrf.zip中的声笔方案文件复制进去，重新部署后就可使用了。
+解压 squirrel 压缩包，安装主程序（一般会重启系统），然后打开用户设定文件夹，将压缩包里的 `squirrel.custom.yaml` 复制进去。打开用户设定，将sbsrf.zip中的声笔方案文件复制进去，重新部署后就可使用了。注意，MacOS < 13时，只能用squirrel 0.16。
 
 ![image-20230223082952594](/images/image-20230223082952594.png)
 
