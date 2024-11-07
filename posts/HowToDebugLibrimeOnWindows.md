@@ -46,7 +46,7 @@ lua版声笔（目前比较正常的是20240213发布的版本）采用原版的
 3. 将其调试项的工作目录设为`$(SolutionDir)bin\Release\`，
 4. 在其项目属性的链接器选项的调试项中，将「生成调试信息」一项设置为「生成调试信息(/DEUBG)」，
 5. `librime\build\bin`中的文件都复制到子目录Release中，
-6. 点击运行「本地Windows调速器」就可以跟踪调试Rime的自带方案了。
+6. 点击运行「本地Windows调试器」就可以跟踪调试Rime的自带方案了。
 
 若要同时调试声笔输入法，则把声笔的相应方案复制到上述Release目录即可。若要跟踪调试lua脚本，最简单的办法是用[debugger.lua](https://github.com/slembcke/debugger.lua)。
 

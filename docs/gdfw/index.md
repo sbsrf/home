@@ -22,7 +22,7 @@ date: 2024-01-29 09:00:32
     - 快顶模式：bys3 sgz_ sb; p_fjo d, w_ zbu y bys3!
   - 声笔拼音：
     - 固定模式：baiyaas_ sizais_ bupiifaad, w_ zaamei_ baiys!
-    - 纯顶模式：bysu szsi bpfd, w_ zme bysu!
+    - 顶功模式：bysu szsi bpfd, w_ zme bysu!
     - 搜狗拼音：baiyangs_ shizais_ bupingfand, wozanmei_ baiyangs!
   - 声笔自然：bysu szsi bpfd, w_ zjmz bysu!
     - 搜狗自然：blyhu_ uizls_ bupyfjd, w_ zjmzblyhu!
@@ -41,7 +41,7 @@ date: 2024-01-29 09:00:32
     - 快顶模式：qdc3 z_ wbd3 ba jv d_ go yc si bdc2 , pfi rp nn; sny8 d, s_ hbl2 cjz2 dy; tw de zmz2.
   - 声笔拼音：
     - 固定模式：qice_ z_ waabuda_ biaji_ d_ gaoyuas_ beeci, puru_ nd; siye_ d, s_ hualu_ cuozoo_ d_ yitia_ da_ zaazi. 
-    - 纯顶模式：qce z_ wbda bji d_ gysa bci, pru nd; sye d, s_ hlu czo d_ yti d3 zzi.
+    - 顶功模式：qce z_ wbda bji d_ gysa bci, pru nd; sye d, s_ hlu czo d_ yti d3 zzi.
     - 搜狗拼音：qice_ z_ wangbudao_ bianji_ d_ gaoyuans_ benchi, puru_ nid_ shiye_ d, s_ huanglv_ cuozhong_ d_ yitiao_ da_ zhanzi.
   - 声笔自然：qice z_ wbdk bmji d_ gkyr sh_ bfci, puru nd; siye d, s_ hdlv cozs d_ yitc da_ zjzi.
     - 搜狗自然：qiie z_ whbudk_ bmji_ gkyruh_ bfii, puru_ nide_ uiye_ d, ui hdlv_ cozs_ d_ yitc_ da_ vjzi.
