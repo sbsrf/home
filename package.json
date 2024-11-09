@@ -6,7 +6,7 @@
   "author": "",
   "scripts": {
     "sbkd": "cd public && curl -L https://github.com/sbsrf/sbkd/releases/download/v0.0.1-alpha/sbkd.zip -O && unzip sbkd.zip && rm sbkd.zip",
-    "copy_rimejs": "/bin/cp -f src/rime.js public/rime.js",
+    "copy_rimejs": "cp -f src/rime.js public/rime.js",
     "start": "vitepress dev",
     "build": "npm run sbkd && npm run copy_rimejs && vitepress build",
     "preview": "vitepress preview",
@@ -24,7 +24,7 @@
     "naive-ui": "^2.37.3",
     "supermemo": "^2.0.17",
     "textarea-caret": "^3.1.0",
-    "vitepress": "^1.0.0-rc.41",
+    "vitepress": "^1.5.0",
     "vue": "^3.4.15"
   }
 }
