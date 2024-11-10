@@ -7,6 +7,7 @@ import LibrimeWorker, {
   asciiModeKey,
   asciiPunctKey,
   changeLanguageKey,
+  changePunctuationKey,
   imeKey,
   loadingKey,
   selectIMEKey,
@@ -92,6 +93,7 @@ provide(loadingKey, loading);
 provide(asciiModeKey, isEnglish);
 provide(asciiPunctKey, isEnglishPunctuation);
 provide(changeLanguageKey, changeLanguage);
+provide(changePunctuationKey, changePunctuation);
 provide(textKey, text);
 provide(syncOptionsKey, syncOptions);
 provide(workerKey, worker);

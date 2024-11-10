@@ -21,6 +21,7 @@ export const workerKey = Symbol()
 export const textKey = Symbol()
 export const syncOptionsKey = Symbol()
 export const changeLanguageKey = Symbol()
+export const changePunctuationKey = Symbol()
 
 export default class LibrimeWorker {
   private worker: LambdaWorker;
