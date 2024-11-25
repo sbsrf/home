@@ -3,29 +3,25 @@
 layout: home
 
 hero:
-  name: 声笔输入法
-  text: 顶功输入新体验
-  tagline: 简单高效、系统全面的中文输入解决方案
-  image:
-    src: /logo.svg
-    alt: sbxlm
-  actions:
-    - theme: brand
-      text: 开始学习
-      link: /about/
-    - theme: alt
-      text: 在线体验
-      link: /sbkd/
-    - theme: alt
-      text: 立刻下载
-      link: https://github.com/sbsrf/home/releases
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    name: 声笔输入法
+    text: 顶功输入新体验
+    tagline: 简单高效、系统全面的中文输入解决方案
+    image:
+        src: /logo.svg
+        alt: sbxlm
+    actions:
+        - theme: brand
+          text: 开始学习
+          link: /about/
+        - theme: alt
+          text: 在线体验
+          link: /sbkd/
+        - theme: alt
+          text: 立刻下载
+          link: https://github.com/sbsrf/home/releases
+        - theme: alt
+          text: 博客
+          link: /posts/
 ---
 
 <script setup>
