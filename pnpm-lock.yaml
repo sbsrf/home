@@ -53,6 +53,9 @@ importers:
       vitepress:
         specifier: ^1.5.0
         version: 1.5.0(@algolia/client-search@5.15.0)(async-validator@4.2.5)(markdown-it-mathjax3@4.3.2)(postcss@8.4.49)(search-insights@2.17.3)(terser@5.36.0)
+      vooks:
+        specifier: ^0.2.12
+        version: 0.2.12(vue@3.5.13)
       vue:
         specifier: ^3.4.15
         version: 3.5.13
