@@ -8,6 +8,7 @@
     "sbkd": "cd public && curl -L https://github.com/sbsrf/sbkd/releases/download/v0.0.1-alpha/sbkd.zip -O && unzip sbkd.zip && rm sbkd.zip",
     "start": "vitepress dev",
     "build": "npm run sbkd  && vitepress build",
+    "build:no-sbkd": "vitepress build",
     "preview": "vitepress preview",
     "pwa": "pwa-assets-generator"
   },
