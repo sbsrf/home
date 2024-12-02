@@ -29,7 +29,12 @@ export default withPwa(defineConfig({
     nav: [
       { text: "主页", link: "/" },
       { text: "教程", link: "/about/" },
-      { text: "文章", link: "/posts/" },
+      {
+        text: "文章", items: [
+          { text: "文章列表", link: "/posts/" },
+          { text: "所有标签", link: "/pages/tags/" }
+        ],
+      },
       { text: "体验", link: "/sbkd/" },
       { text: "练习", link: "/sbtf/" },
       { text: "工具", link: "/sbgj/" },
