@@ -14,7 +14,7 @@
 ### 安装依赖
 
 ```bash
-npm i
+pnpm i
 ```
 
 ### 安装「声笔快打」静态资源
@@ -22,7 +22,7 @@ npm i
 为了减少本项目的依赖，在线演示声笔输入法所需的 Rime 程序和数据文件由 sbsrf/sbkd 项目编译并发布为 Release，然后本项目只需拉取即可。
 
 ```bash
-npm run sbkd
+pnpm run sbkd
 ```
 
 这一步要求您有命令行工具 `curl` 和 `unzip`。如果没有，您也可以手动下载相应的发布包，解压缩到 `/public/` 目录下。
@@ -30,11 +30,11 @@ npm run sbkd
 ### 预览
 
 ```bash
-npm start
+pnpm start
 ```
 
 ### 构建
 
 ```bash
-npm run build
+pnpm run build
 ```
