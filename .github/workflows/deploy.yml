@@ -23,6 +23,8 @@ jobs:
           cache: pnpm
       - run: pnpm i
       - run: pnpm run build
+      - name: compress pictures
+        run: pnpm run compress-pictures
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'

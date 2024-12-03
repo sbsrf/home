@@ -10,7 +10,8 @@
     "build": "npm run sbkd  && vitepress build",
     "build:no-sbkd": "vitepress build",
     "preview": "vitepress preview",
-    "pwa": "pwa-assets-generator"
+    "pwa": "pwa-assets-generator",
+    "compress-pictures": "node .vitepress/compress-pictures.mjs"
   },
   "devDependencies": {
     "@datastructures-js/priority-queue": "^6.3.1",
@@ -25,6 +26,7 @@
     "lodash-es": "^4.17.21",
     "markdown-it-mathjax3": "^4.3.2",
     "naive-ui": "^2.40.1",
+    "sharp": "^0.33.5",
     "supermemo": "^2.0.17",
     "textarea-caret": "^3.1.0",
     "vitepress": "^1.5.0",
