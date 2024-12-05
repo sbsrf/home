@@ -3,10 +3,10 @@ title: Rime用户数据同步方法
 date: 2024-06-20 14:49:00
 typora-root-url: ..\public
 tags:
-    - 声笔
-    - 输入法
-    - Rime
-    - 数据同步
+  - 声笔
+  - 输入法
+  - Rime
+  - 数据同步
 ---
 
 Rime 是一个强大的开源输入法引擎，它以一个共同的函数库（[librime](https://github.com/rime/librime)）为中心，配以不同的前端（frontend）来支持各种操作系统。就前端来说，在 Windows 上是小狼毫（Weasel）或者 PIME，在安卓上为同文（Trime）或者 fcitx5-android，在 Linux 上为中州韵（ibus-rime）或者 fcitx5-rime 或者 fcitx-rime，在 MacOS 上为鼠须管（Squirrel）或者 XIME，在 iOS 上为仓输入法（Hamster），还有专用于 Emacs 的 emacs-rime，专用于 Vim 的 coc-rime，专用于 Zsh 的 zsh-rime，以及专用于 web 的 My Rime。
