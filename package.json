@@ -16,6 +16,7 @@
   "devDependencies": {
     "@datastructures-js/priority-queue": "^6.3.1",
     "@libreservice/my-worker": "^0.4.2",
+    "@types/node": "^22.10.1",
     "@vicons/fa": "^0.12.0",
     "@vite-pwa/assets-generator": "^0.2.6",
     "@vite-pwa/vitepress": "^0.5.3",
@@ -32,5 +33,8 @@
     "vitepress": "^1.5.0",
     "vooks": "^0.2.12",
     "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "optional": "^0.1.4"
   }
 }
