@@ -42,9 +42,9 @@ export default withPwa(defineConfig({
     search: {
       provider: "algolia",
       options: {
-        appId: "4GR9IX2S72",
-        apiKey: "bec14439de51bd69534d2fcbce9ea2c5",
-        indexName: "sbxlm-gitee",
+        appId: "KZWIJ0NJHE",
+        apiKey: "e552eca4180a971c9ccf0490f9ccb1d8",
+        indexName: "sbxlmio",
         translations: {
           button: {
             buttonText: "搜索文档",
