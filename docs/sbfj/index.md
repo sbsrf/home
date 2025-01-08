@@ -16,9 +16,9 @@ typora-root-url: ..\..\public
 
 ## 2 单字输入
 
-在词组模式下，飞简单字输入与在单字模式的唯一区别是，声偏字需要空格上屏。
+在词组模式下，飞简单字输入与在单字模式的唯一区别是，声偏字需要空格上屏。例如，「声」「偏」需要用`st_pr`来输入，而不能用`stpr`，「偏」的声母p并不能将「声」顶上屏幕。
 
-例如，「声」「偏」需要用`st_pr`来输入，而不能用`stpr`，「偏」的声母p并不能将「声」顶上屏幕。
+不过，大多数声偏字都可以在增强模式下，用数标字降低到只用两键即可，例如：声`st→s3`，即`jg→j;`，等等。也就是说，飞简的单字效率基本上能达到飞单的水平。
 
 ## 3 词组输入
 
@@ -30,7 +30,11 @@ typora-root-url: ..\..\public
 
 ![image-20250105084421676](/images/image-20250105084421676.png)
 
-需要注意的是，一简字在组词的时候要输入其第二码，如`yh`，而声笔字的第二码要改为部首，如`大dh`。飞系中，21个一简字及其前两码为：`不bh 平ph 没md 发fy 的db 他tr 你nr 了lz 个gr 可kk 和hh 就jw 去qt 下xb 在zt 出cc 是sq 人rp 一yh 我wg 而vh`；105个声笔字作为二字词首字时的前两码为：`把bf 别bl 边bl 白bp 部bv 次cd 成cg 此cn 从cr 除cv 得dc 大dh 道dl 当dx 对dy 分fb 方fd 非fs 夫fv 飞fz 公gb 给gj 国gk 过gl 高gw 回hk 还hl 好hn 会hr 话hy 家jg 经jj 见jk 进jl 几jp 快kl 口ks 看ks 开kv 孔kz 立ld 利lh 来lh 里ls 力lz 门md 面mh 明mq 名mx 民mz 农ng 内nk 年nn 南ns 那nv 品pk 怕pl 片pp 破ps 皮py 前qb 强qg 全qr 且qv 起qz 若rc 然rl 如rn 日rs 让ry 上sb 事sh 手sp 说sy 双sy 头td 同tk 她tn 体tr 天tv 安vg 二vh 儿vp 暗vq 阿vv 为wd 维wj 晚wq 无wv 外wx 心xd 线xj 笑xp 小xs 想xx 眼ym 用yv 有yv 意yy 也yz 中zk 正zn 自zp 着zy 子zz`。
+需要注意的是，一简字在组词的时候要输入其第二码，如`yh`，而声笔字的第二码要改为部首，如`大dh`。
+
+21个一简字及其前两码为：`不bh 平ph 没md 发fy 的db 他tr 你nr 了lz 个gr 可kk 和hh 就jw 去qt 下xb 在zt 出cc 是sq 人rp 一yh 我wg 而vh`。
+
+105个声笔字作为二字词首字时的前两码为：`把bf 别bl 边bl 白bp 部bv 次cd 成cg 此cn 从cr 除cv 得dc 大dh 道dl 当dx 对dy 分fb 方fd 非fs 夫fv 飞fz 公gb 给gj 国gk 过gl 高gw 回hk 还hl 好hn 会hr 话hy 家jg 经jj 见jk 进jl 几jp 快kl 口ks 看ks 开kv 孔kz 立ld 利lh 来lh 里ls 力lz 门md 面mh 明mq 名mx 民mz 农ng 内nk 年nn 南ns 那nv 品pk 怕pl 片pp 破ps 皮py 前qb 强qg 全qr 且qv 起qz 若rc 然rl 如rn 日rs 让ry 上sb 事sh 手sp 说sy 双sy 头td 同tk 她tn 体tr 天tv 安vg 二vh 儿vp 暗vq 阿vv 为wd 维wj 晚wq 无wv 外wx 心xd 线xj 笑xp 小xs 想xx 眼ym 用yv 有yv 意yy 也yz 中zk 正zn 自zp 着zy 子zz`。
 
 三字词的编码格式为`s1s2s3b3b3`，即各字的声母加末字的前两笔，例如：`计算机jsjei 新世纪xsjaa 大无畏dwwia`等。
 
@@ -86,7 +90,7 @@ typora-root-url: ..\..\public
 
 ### 3.3 选项设置
 
-如果用户习惯一直用第四码大写来输入多字词，那么就可以将飞简schema文件中Translator下的lower_case选项设置为false，以过滤掉`szsbb`上的三字词和多字词，从而大大减少重码，同时将exclude_third选项设置为false，以支持在三码时提供多字词候选，实现多字词三码顶屏输入。
+如果用户习惯一直用第四码大写来输入多字词，那么就可以将飞简schema文件中Translator下的lower_case选项设置为false，以过滤掉`szsbb`上的多字词，从而大大减少重码，同时将exclude_third选项设置为false，以支持在三码时提供多字词候选，实现多字词三码顶屏输入。
 
 如果只希望在默认设置基础上实现多字词三码顶屏输入，那么只需将exclude_third选项设置为false就行了。
 
@@ -94,15 +98,17 @@ typora-root-url: ..\..\public
 
 ## 4 组合变换
 
-除了顶屏之外，组合变换也是节约用键和离散重码的重要手段。大量一、二简字的组合，不管是不是词组，都可以通过这种方式来进行输入。注意，这个时候是没有提示的，需要用户对简字非常熟习才能灵活自如。组合变换一般通过分号键触发，有时也通过Tab键和单引号触发。
+除了顶屏之外，组合变换也是节约用键和离散重码的重要手段。大量一、二简字（声笔字或声偏字）的组合，不管是不是词组，都可以通过这种方式来进行输入。注意，这个时候是没有提示的，需要用户对简字非常熟习才能灵活自如。组合变换一般通过分号键触发，有时也通过Tab键和单引号触发。
 
 (1) 一简字与一简字的组合
 
 例如，「个人」一词，虽然可以按词组的方式用`grrp`来输入。更好的方式是当成两个一简字用`g_r_`来输入，其中下划线表示空格。然而，最好的方式则是采用组合变换，用`gr;`来输入，可以节约一次用键。
 
-(2) 一简字与声笔字的组合
+(2) 一简字与二简字的组合
 
 例如，「一会」可以用`yhu;`代替`y_hu`来输入，虽然不能节约用键，但是可以避免回改。
+
+再如，「一场」可以用`yct;`代替`y_ct_`来输入，可以节约一键。
 
 (3) 二简词与一简字的组合
 
@@ -113,6 +119,10 @@ typora-root-url: ..\..\public
 一简字与二简词可以组合起来通过单引号一起上屏，从而节约一次按键。例如，「是我们」在常规输入时，得用`s + 空格 wm + Tab `，而利用组合变换后就只需`swm'`了。
 
 (5) 声偏字与一简字的组合，可以用Shift+空格来输入，手机上可上滑空格。例如，「受了」就可以这样输入。
+
+(6) 声偏字与声笔字的组合。
+
+例如，「加上」可以用`jlsi;`代替`jl_si`来输入，虽然不能节约用键，但是可以避免回改。
 
 ## 5 增强模式
 
@@ -134,10 +144,10 @@ typora-root-url: ..\..\public
 
 为了便于用户总结和记忆飞简的基本内容，现将其字词编码格式总结一下，编码格式采用了以下精简的表达方式。
 
-> 单字 `sb, spb^bx`
-> 二字词 `s1p1s2^'b2b2b1b1x`
-> 三字词 `s1s2s3^'b3b3^'b1b1x`
-> 多字词 `s1s2s3b0^'b0b1b1x|s1s2s3S0^'b1b1x`
+- 单字 `sb, spb^bx`
+- 二字词 `s1p1s2^'b2b2b1b1x`
+- 三字词 `s1s2s3^'b3b3^'b1b1x`
+- 多字词 `s1s2s3b0^'b0b1b1x|s1s2s3S0^'b1b1x`
 
 ```
 z = p|b

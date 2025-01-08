@@ -240,10 +240,10 @@ typora-root-url: ..\..\public
 
 为了便于用户总结和记忆飞讯的基本内容，现将飞讯的字词编码格式总结一下，编码格式采用了以下精简的表达方式。
 
-> 单字 `sb, sp^bbx`
-> 二字词 `s1z1s2b2b2^'b1b1x`
-> 三字词 `s1s2s3b3b3^'b1b1x`
-> 多字词 `s1s2s3b0b0^'b1b1x|s1s2s3S0^'b1b1x`
+- 单字 `sb, sp^bbx`
+- 二字词 `s1z1s2b2b2^'b1b1x`
+- 三字词 `s1s2s3b3b3^'b1b1x`
+- 多字词 `s1s2s3b0b0^'b1b1x|s1s2s3S0^'b1b1x`
 
 ```
 z = p|b
