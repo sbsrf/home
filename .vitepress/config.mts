@@ -66,7 +66,16 @@ export default withPwa(defineConfig({
     sidebar: {
       "/": [
         {
-          text: "简介",
+          text: "声笔QQ群",
+          items: [
+            { text: "783734487", link: "https://qm.qq.com/q/rl1XMBWqm4" },
+            { text: "728093309", link: "https://qm.qq.com/q/ByZsKQS1os" },
+            { text: "445906697", link: "https://qm.qq.com/q/ufHlzm2ywa" },
+            { text: "780510469", link: "https://qm.qq.com/q/ETg8V3Xcxq" },
+          ],
+        },
+        {
+          text: "声笔简介",
           items: [
             { text: "总体介绍", link: "/about/" },
             { text: "安装配置", link: "/vzpz/" },
@@ -116,15 +125,6 @@ export default withPwa(defineConfig({
           items: [
             { text: "常见问题", link: "/faq/" },
             { text: "版本历史", link: "/fzlc/" },
-          ],
-        },
-        {
-          text: "声笔QQ群",
-          items: [
-            { text: "783734487", link: "https://qm.qq.com/q/rl1XMBWqm4" },
-            { text: "728093309", link: "https://qm.qq.com/q/ByZsKQS1os" },
-            { text: "445906697", link: "https://qm.qq.com/q/ufHlzm2ywa" },
-            { text: "780510469", link: "https://qm.qq.com/q/ETg8V3Xcxq" },
           ],
         },
       ],

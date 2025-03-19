@@ -2,12 +2,16 @@
 
 ## 目录结构
 
+- `/.vitepress/`: VitePress 生成器配置
 - `/docs/`: 教程文件
 - `/posts/`: 博客文章
+- `/pages/`: 文章的分类和标签
 - `/components/`: Markdown 中用到的 Vue 组件
 - `/src/`: 组件引用的 JavaScript 类和函数
-- `/.vitepress/`: VitePress 生成器配置
 - `/public/`: 静态资源文件
+- `/sbgj/`: 声笔工具，用于迁移9.X的词典到10.X的声笔词典
+- `/sbkd/`: 声笔快打，无需安装就可以体验声笔输入法
+- `/sbtf/`: 声笔条反，在线练习声笔飞系的部首
 
 ## 开发
 
