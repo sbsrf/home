@@ -20,6 +20,7 @@ date: 2024-01-29 09:00:32
   - 声笔飞讯：
     - 慢顶模式：bysei sgz_ sb; p_ fjo d, w_ zbu my bysei!
     - 快顶模式：bys3 sgz_ sb; p_fjo d, w_ zbu y bys3!
+  - 声笔飞简：bys szs bpf d, w_ zbm bys! 
   - 声笔拼音：
     - 固定模式：baiyaas_ sizais_ bupiifaad, w_ zaamei_ baiys!
     - 顶功模式：bysu szsi bpfd, w_ zme bysu!
@@ -39,6 +40,7 @@ date: 2024-01-29 09:00:32
   - 声笔飞讯：
     - 慢顶模式：qdcea z_ wbdea ba jv d_ go yc si bdcaa , pfi rp nn; snyia d, s_ hblaa cjzaa dy; tw de zmzai.
     - 快顶模式：qdc3 z_ wbd3 ba jv d_ go yc si bdc2 , pfi rp nn; sny8 d, s_ hbl2 cjz2 dy; tw de zmz2.
+  - 声笔飞简：qdc z_ wbd blj d_ gwy si bdc, pfr nd; sny d, s_ hbl cjz d_ yht de zmz.
   - 声笔拼音：
     - 固定模式：qice_ z_ waabuda_ biaji_ d_ gaoyuas_ beeci, puru_ nd; siye_ d, s_ hualu_ cuozoo_ d_ yitia_ da_ zaazi. 
     - 顶功模式：qce z_ wbda bji d_ gysa bci, pru nd; sye d, s_ hlu czo d_ yti d3 zzi.
