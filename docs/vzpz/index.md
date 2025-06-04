@@ -28,7 +28,7 @@ Poto 开发 Win 一键全自动化安装声笔输入法[「声笔一键」和「
 
 ![image-20230620083039211](/images/image-20230620083039211.png)
 
-- 安装小狼毫后，将 weasel 压缩包里的 `weasel.custom.yaml` 和`sbxlm.ico`也复制到新生成的用户文件夹 rime 中。若要定制小狼毫主题，也请在 `weasel.custom.yaml` 中进行。
+- 安装小狼毫后，将 weasel 压缩包里的 `weasel.custom.yaml` 和`sbxlm.ico`也复制到新生成的<u>用户文件夹</u> rime 中，注意不要错误地复制地了<u>程序文件夹</u>。若要定制小狼毫主题，也请在 `weasel.custom.yaml` 中进行。
 - 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹 rime 中，重新部署一下就安装好了声笔输入法的方案。
 - 如果备份了 userdb 目录，再将它们复制回 rime 文件夹中。
 
@@ -65,11 +65,11 @@ macOS 目前有两个前端，分别是第三方的小企鹅和官方的鼠须�
 
 #### 2.3.1 小企鹅
 
-打开[小企鹅 macOS 下载页](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)，选择「中州韵版」。安装完成后，将 sbsrf.zip 中的声笔方案文件复制到 `~/.local/share/fcitx5/rime`，重新部署后就可使用了。
+打开[小企鹅 macOS 下载页](https://github.com/fcitx-contrib/fcitx5-macos-installer/blob/master/README.zh-CN.md)，选择「中州韵版」。安装完成后，将 sbsrf.zip 中的声笔方案文件复制到 `~/.local/share/fcitx5/rime`，重新部署后就可使用了。注意，需要MacOS版本 >= 13。
 
 #### 2.3.2 鼠须管
 
-解压 squirrel 压缩包，安装主程序（一般会重启系统），然后打开用户设定文件夹，将压缩包里的 `squirrel.custom.yaml` 复制进去。打开用户设定，将 sbsrf.zip 中的声笔方案文件复制进去，重新部署后就可使用了。注意，MacOS < 13 时，只能用 squirrel 0.16。
+解压 squirrel 压缩包，安装主程序（一般会重启系统），然后打开用户设定文件夹，将压缩包里的 `squirrel.custom.yaml` 复制进去。打开用户设定，将 sbsrf.zip 中的声笔方案文件复制进去，重新部署后就可使用了。注意，MacOS版本 < 13 时，只能用 squirrel 0.16。
 
 ![image-20230223082952594](/images/image-20230223082952594.png)
 
