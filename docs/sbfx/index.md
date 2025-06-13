@@ -238,6 +238,24 @@ typora-root-url: ..\..\public
 
 飞讯的单字模式和声笔飞单的区别是，后者在输入词组时，szS格式只输入二字词和三字词，而用sSss格式来输入多字词。
 
+## 9 高手设置
+
+如果对飞讯已经非常熟悉，那么建议通过修改飞讯的schema，进行以下设置，来尽量减少提示信息的干扰并减少重码。
+
+1. 采用速顶模式，将含rapid_pop的options项的reset设置为2；
+2. 采用增强模式，将is_enhanced项的reset设置为1；
+3. 隐藏数标字词的提示，将含hide的options项的reset设置为0；
+4. 采用单项提示，将single_display项的reset设置为1；
+5. 采用单次选重，将translator下的single_selection设置为true；
+6. 进行词组过滤，将translator下的enable_filtering项设为true；
+7. 将translator下的过滤强度filter_strength设置为6。
+
+![image-20250613060822476](/images/image-20250613060822476.png)
+
+![image-20250613060902056](/images/image-20250613060902056.png)
+
+![image-20250613063830937](/images/image-20250613063830937.png)
+
 ## 附录：编码格式
 
 为了便于用户总结和记忆飞讯的基本内容，现将飞讯的字词编码格式总结一下，编码格式采用了以下精简的表达方式。
