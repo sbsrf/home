@@ -16,19 +16,13 @@ const props = defineProps<{ disableSwitch?: boolean }>();
 const ime = inject<Ref<string>>(imeKey);
 const selectIME = inject<(s: string) => void>(selectIMEKey)!;
 const selectOptions = [
-  { label: "声笔易拼", value: "sbyp" },
-  { label: "声笔拼音", value: "sbpy" },
-  { label: "声笔简拼", value: "sbjp" },
   { label: "声笔简码", value: "sbjm" },
-  { label: "声笔飞单", value: "sbfd" },
+  { label: "声笔拼音", value: "sbpy" },
   { label: "声笔飞码", value: "sbfm" },
-  { label: "声笔飞延", value: "sbfy" },
+  { label: "声笔飞单", value: "sbfd" },
   { label: "声笔飞讯", value: "sbfx" },
-  { label: "声笔飞简", value: "sbfj" },
-  { label: "声笔自然", value: "sbzr" },
-  { label: "声笔自整", value: "sbzz" },
   { label: "声笔小鹤", value: "sbxh" },
-  { label: "声笔鹤整", value: "sbhz" },
+  { label: "声笔自然", value: "sbzr" },
 ];
 const loading = inject<Ref<boolean>>(loadingKey)!;
 const isEnglish = inject<Ref<boolean>>(asciiModeKey)!;
