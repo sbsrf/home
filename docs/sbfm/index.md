@@ -39,7 +39,7 @@ typora-root-url: ..\..\public
 
 #### 2.2.1 二字词
 
-飞码对二字词特别重视，致力于提高其输入效率。飞码的二字词取各字的前两码来编码，例如：`不能bhns 下台xbts 大汉dehd 心爱xovz 常规cjgj 电脑dqnv 洞见ddji 健全jrqu 淹没ydmd`等。
+飞码对二字词特别重视，致力于提高其输入效率。飞码的二字词取各字的前两码来编码，例如：`不能bhns 下台xbts 大汉dehd 心爱xovz 常规cjgj 电脑dvnv 洞见ddji 健全jrqu 淹没ydmd`等。
 
 需要注意的是，一简字在组词的时候要输入其第二码，如前面例子中的`不bh 下xb 没md`，而声笔字的第二码不变，如前面例子中的`大de 心xo 见ji 全qu`。飞系中，21个一简字及其前两码为：`不bh 平ph 没md 发fy 的db 他tr 你nr 了lz 个gr 可kk 和hh 就jw 去qt 下xb 在zt 出cc 是sq 人rp 一yh 我wg 而vh`。
 
@@ -275,14 +275,23 @@ typora-root-url: ..\..\public
 
 再如，在输入「要接受」时，通常得用` yx_js7`，但是由于有了延迟顶屏，就只用 `yxjs7` 就可以了。
 
-## 5 高手设置
+## 5 模式组合
+
+在飞码的schema文件中的translator项下，有两个选项force_selection和single_selection，可以用来组合成四种输入模式。
+
+1. force_selection为true而single_selection为false：此为默认情况。词组在四码时进行选重，在六码时也进行选重。六码选重时会排除四码时已经显示的所有选项。
+2. force_selection和single_selection均为false：词组在四码时进行选重，在六码时也进行选重。但六码选重时只会排除四码时的首选项。
+3. force_selection为false而single_selection为true：词组只在六码时选重，第五码时出现重码的下一个选项。
+4. force_selection和single_selection均为true：词组只在六码时选重，但五码出现的是二简字和三简字的组合。这一方面可以缩短单字的码长，还同时可以减少词组重码时的查看和选择操作，从而减少交互时间，是飞码熟练者应该采用的输入模式。六码有正常词组而没出现二简字和四码字首选的组合时，可以用分号上屏这种组合。在增强模式下，为了避免发生冲突，可在第六、七码时用23789代替aeuio；在拿不准笔画时可用14560中的任一数字先顶上二简字后，再作后续操作。
+
+## 6 高手设置
 
 如果对飞码已经非常熟悉，那么建议通过修改飞码的schema，进行以下设置，来尽量减少提示信息的干扰并减少重码。
 
 1. 采用增强模式，将is_enhanced项的reset设置为1；
 2. 隐藏数标字词的提示，将含hide的options项的reset设置为0；
 3. 采用单项提示，将single_display项的reset设置为1；
-4. 采用单次选重，将translator下的single_selection设置为true。
+4. 采用单次选重，将translator下的force_selection和single_selection均设置为true。
 
 ## 附录：编码格式
 
