@@ -106,8 +106,7 @@ export default withPwa(defineConfig({
               text: "声笔混拼", link: "/sbh/",
               items: [
                 { text: "声笔易拼", link: "/sbyp/" },
-                { text: "声笔拼音", link: "/sbpy/" },
-                { text: "声笔四拼", link: "/sbsp/" },              
+                { text: "声笔拼音", link: "/sbpy/" },          
               ],
             },
             {
