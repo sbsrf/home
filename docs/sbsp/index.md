@@ -59,7 +59,7 @@ const yunma = Object.entries({
 
 ## 下载安装
 
-注意，由于词库体积较大且不能通用，声笔四拼并没有放在声笔输入法统一的安装包中，需要另行下载安装。请点击[此链接](https://github.com/rimeinn/rime-snow-pinyin/releases/latest)下载其中的 `snow.zip` 文件，解压缩之后放入您的用户文件夹。
+注意，由于词库体积较大且不能通用，且这里里介绍的是很早的版本，所以声笔四拼（冰雪四拼）并没有放在声笔输入法统一的安装包中，需要查看新版教程和下载使用的请到[冰雪拼音官网](https://input.tansongchen.com/)。
 
 各文件的作用如下：
 
