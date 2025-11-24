@@ -103,6 +103,12 @@ export default withPwa(defineConfig({
               ],
             },
             {
+              text: "声笔新系", link: "/sbx/",
+              items: [
+                { text: "声笔猛码", link: "/sbmm/" },       
+              ],
+            },
+            {
               text: "声笔混拼", link: "/sbh/",
               items: [
                 { text: "声笔易拼", link: "/sbyp/" },
