@@ -68,6 +68,7 @@ export default withPwa(defineConfig({
         {
           text: "声笔QQ群",
           items: [
+            { text: "947735684", link: "https://qm.qq.com/q/BzkD3lI6re" },
             { text: "783734487", link: "https://qm.qq.com/q/rl1XMBWqm4" },
             { text: "728093309", link: "https://qm.qq.com/q/ByZsKQS1os" },
             { text: "445906697", link: "https://qm.qq.com/q/ufHlzm2ywa" },
