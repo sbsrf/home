@@ -41,7 +41,7 @@ typora-root-url: ..\..\public
 
 飞码对二字词特别重视，致力于提高其输入效率。飞码的二字词取各字的前两码来编码，例如：`不能bhns 下台xbts 大汉dehd 心爱xovz 常规cjgj 电脑dvnv 洞见ddji 健全jrqu 淹没ydmd`等。
 
-需要注意的是，一简字在组词的时候要输入其第二码，如前面例子中的`不bh 下xb 没md`，而声笔字的第二码不变，如前面例子中的`大de 心xo 见ji 全qu`。飞系中，21个一简字及其前两码为：`不bh 平ph 没md 发fy 的db 他tr 你nr 了lz 个gr 可kk 和hh 就jw 去qt 下xb 在zt 出cc 是sq 人rp 一yh 我wg 而vh`。
+需要注意的是，一简字在组词的时候要输入其第二码，如前面例子中的`不bh 下xb 没md`，而声笔字的第二码不变，如前面例子中的`大de 心xo 见ji 全qu`。飞系中，21个一简字及其前两码为：`不bh 平ph 没md 发fy 的db 他tr 你nr 了lz 个gr 可kk 和hh 就jw 去qt 下xb 在zt 出cc 是sv 人rp 一yh 我wg 而vh`。
 
 为了方便初学者，飞码在第三码时提示了前两码对应的单字和第三码开头的一简字、声笔字的组合，例如：`困一kky 放是ffs 难大nyde 实无sgwe`等，这是因为初学者可能还记不住一简字、声笔字。
 
