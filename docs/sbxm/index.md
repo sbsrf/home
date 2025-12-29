@@ -20,10 +20,7 @@ typora-root-url: ..\..\public
 3. 增加简体字根：莫 k、奖无大 k、辛和辨旁 l、亡 w、食和饣u、⺗ x、矢g，以减少重码；
 4. 增加繁体字根：門、貝、車、馬、長、糹、飠、釒，以支持GBK字集。
 
-SVG 版本
-![声笔象码大字根键位表8K_SVG](/images/%E5%A3%B0%E7%AC%94%E8%B1%A1%E7%A0%81%E5%AD%97%E6%A0%B9%E9%94%AE%E4%BD%8D%E8%A1%A88K%E5%A4%A7%E5%A4%A7%E5%A4%A7Tron.svg)  
 
-PNG 版本
 ![声笔象码大字根键位表8K_SVG](/images/%E5%A3%B0%E7%AC%94%E8%B1%A1%E7%A0%81%E5%AD%97%E6%A0%B9%E9%94%AE%E4%BD%8D%E8%A1%A88K%E5%A4%A7%E5%A4%A7%E5%A4%A7Tron.png)  
 
 
