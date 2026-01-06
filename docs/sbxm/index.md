@@ -20,14 +20,7 @@ typora-root-url: ..\..\public
 3. 增加简体字根：莫 k、奖无大 k、辛和辨旁 l、亡 w、食和饣u、⺗ x、矢g，以减少重码；
 4. 增加繁体字根：門、貝、車、馬、長、糹、飠、釒，以支持GBK字集。
 
-![声笔象码大字根键位表8K_Light_PNG](https://github.com/sbsrf/home/blob/main/public/images/%E5%A3%B0%E7%AC%94%E8%B1%A1%E7%A0%81%E5%AD%97%E6%A0%B9%E9%94%AE%E4%BD%8D%E8%A1%A88K%E5%A4%A7%E5%A4%A7%E5%A4%A7Light.png)  
-
-![声笔象码大字根键位表8K_SVG](https://github.com/sbsrf/home/blob/main/public/images/%E5%A3%B0%E7%AC%94%E8%B1%A1%E7%A0%81%E5%AD%97%E6%A0%B9%E9%94%AE%E4%BD%8D%E8%A1%A88K%E5%A4%A7%E5%A4%A7%E5%A4%A7Tron.png)  
-
-
-![声笔象码字根键位表8K_SVG](/images/%E5%A3%B0%E7%AC%94%E8%B1%A1%E7%A0%81%E5%AD%97%E6%A0%B9%E9%94%AE%E4%BD%8D%E8%A1%A88K.png)
-
-![米十五笔字根图V1.0八字定捺版彩色字根图](/images/%E7%B1%B3%E5%8D%81%E4%BA%94%E7%AC%94%E5%AD%97%E6%A0%B9%E5%9B%BEV1.0%E5%85%AB%E5%AD%97%E5%AE%9A%E6%8D%BA%E7%89%88%E5%BD%A9%E8%89%B2%E5%AD%97%E6%A0%B9%E5%9B%BE.png)
+![声笔象码字根键位表8K大大大Light](/images/%E5%A3%B0%E7%AC%94%E8%B1%A1%E7%A0%81%E5%AD%97%E6%A0%B9%E9%94%AE%E4%BD%8D%E8%A1%A88K%E5%A4%A7%E5%A4%A7%E5%A4%A7Light-1767669410824-3.png)
 
 下面引述米＋五笔字根表内含的五种记忆规则，以方便用户理解记忆。请注意将象码的字根调整加入其中。
 
