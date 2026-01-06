@@ -25,7 +25,7 @@ typora-root-url: ..\..\public
 
 下面是Poto制作的高清猛码键盘助记图，可以作为电脑桌面图，以备查阅。
 
-![声笔猛码字根键位表 Design by Poto](/images/%E5%A3%B0%E7%AC%94%E7%8C%9B%E7%A0%81%E5%A4%A7%E5%AD%97%E6%A0%B98K.svg)
+![声笔猛码字根键位表 Design by Poto](/images/%E5%A3%B0%E7%AC%94%E7%8C%9B%E7%A0%81%E5%A4%A7%E5%AD%97%E6%A0%B98K.png)
 
 为了便于用户按照编码的字母顺序查阅字根及其联想词，在本文未尾还提供了按小大码排序的字根表。
 
