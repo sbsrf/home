@@ -106,6 +106,7 @@ export default withPwa(defineConfig({
             {
               text: "声笔新系", link: "/sbx/",
               items: [
+                { text: "声笔象单", link: "/sbxd/" },       
                 { text: "声笔象码", link: "/sbxm/" },       
                 { text: "声笔猛码", link: "/sbmm/" },       
               ],
