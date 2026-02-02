@@ -18,7 +18,7 @@ hero:
           link: /sbkd/
         - theme: alt
           text: 立刻下载
-          link: https://github.com/sbsrf/home/releases
+          link: https://github.com/sbsrf/sbsrf/releases
         - theme: alt
           text: 博客
           link: /posts/
