@@ -130,19 +130,19 @@ typora-root-url: ../../public
 
 - 多字词：53万多个，编码格式为`s¹s²s³f⁰b¹b¹b²b²b³b³`，即取前三字的首码和末字首笔的符号形式，可再用字母笔画补充前三字的前两笔。
 
-  <img src="./images/image-20260221114030885.png" alt="image-20260221114030885" style="zoom: 50%;" />
+  <img src="/images/image-20260221114030885.png" alt="image-20260221114030885" style="zoom: 50%;" />
 
   在上图输入`srg/`的时候，出现了「傻瓜」一词，它与单字「舓」产生冲突了。由于「舓」是字频前5000之后的生僻字，所以被挤到了次选，「傻瓜」则作为固定的简词安排在了首选。如果需要输入其它四码时重码的词，如「使馆」，则可开始补充首字的笔画，如下所示。
 
-  <img src="./images/image-20260221114217355.png" alt="image-20260221114217355" style="zoom:50%;" />
+  <img src="/images/image-20260221114217355.png" alt="image-20260221114217355" style="zoom:50%;" />
 
   如果重码词排在了当页的后面，也可用数字选择上屏。若在当页没有出现，那么可以继续补充笔画，最多可补笔画到码长为10为止。例如，「杀人鬼」可以再加「杀」的第二笔就到首选了。
 
-  <img src="./images/image-20260221150321305.png" alt="image-20260221150321305" style="zoom:50%;" />
+  <img src="/images/image-20260221150321305.png" alt="image-20260221150321305" style="zoom:50%;" />
 
   再如，下一页的「伤肝」可以再追加几个笔画来提前到首选。
   
-  <img src="./images/image-20260221120059250.png" alt="image-20260221120059250" style="zoom:50%;" />
+  <img src="/images/image-20260221120059250.png" alt="image-20260221120059250" style="zoom:50%;" />
   
   当然也可用Tab和Shift+Tab前后翻页来查找，但是效率低下，通常只在不清楚后续笔画时才使用。
 
@@ -150,13 +150,13 @@ typora-root-url: ../../public
 
 此型为二字词专用的全动态编码，其格式为`s¹g¹s⁰n⁰b¹b¹b⁰b⁰b⁰b⁰`，即取首字的前两码和末字的首笔，可再用字母笔画补充首字的前两笔和末字的前四笔。
 
-<img src="./images/image-20260221150734563.png" alt="image-20260221150734563" style="zoom:50%;" />
+<img src="/images/image-20260221150734563.png" alt="image-20260221150734563" style="zoom:50%;" />
 
 在上图中，「傻瓜」后提示有简码`sgr/`，表明它可静态地用简码输入。若像下图中追加笔画输入了「使馆」一词，那么再输入「使馆」时，它的编码就可能缩短了，从而只需`srg7`就能输入。
 
-<img src="./images/image-20260221150908617.png" alt="image-20260221150908617" style="zoom:50%;" />
+<img src="/images/image-20260221150908617.png" alt="image-20260221150908617" style="zoom:50%;" />
 
-<img src="./images/image-20260221153121661.png" alt="image-20260221153121661" style="zoom:50%;" />
+<img src="/images/image-20260221153121661.png" alt="image-20260221153121661" style="zoom:50%;" />
 
 这样，「傻瓜」和「使馆」就都只要四键就能输入，起到了节约用键而提高效率的作用。
 
@@ -164,13 +164,13 @@ typora-root-url: ../../public
 
 此型为三字词专用的全动态编码，其格式为`s¹s²S⁰g⁰b¹b¹b²b²b⁰b⁰`，即取前两字的首码加末字的前两码，但要大写第三码，可再用字母笔画补充前三字的前两笔。下例是输入「语用学」时的逐键快速过滤过程。
 
-<img src="./images/image-20260221154701766.png" alt="image-20260221154701766" style="zoom:50%;" />
+<img src="/images/image-20260221154701766.png" alt="image-20260221154701766" style="zoom:50%;" />
 
-<img src="./images/image-20260221154725862.png" alt="image-20260221154725862" style="zoom:50%;" />
+<img src="/images/image-20260221154725862.png" alt="image-20260221154725862" style="zoom:50%;" />
 
-<img src="./images/image-20260221154751809.png" alt="image-20260221154751809" style="zoom:50%;" />
+<img src="/images/image-20260221154751809.png" alt="image-20260221154751809" style="zoom:50%;" />
 
-<img src="./images/image-20260221154818398.png" alt="image-20260221154818398" style="zoom:50%;" />
+<img src="/images/image-20260221154818398.png" alt="image-20260221154818398" style="zoom:50%;" />
 
 ##### 3.2.1.4 sssS型
 
