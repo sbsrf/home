@@ -156,6 +156,8 @@ typora-root-url: ../../public
 
 <img src="/images/image-20260221150908617.png" alt="image-20260221150908617" style="zoom:50%;" />
 
+
+
 <img src="/images/image-20260221153121661.png" alt="image-20260221153121661" style="zoom:50%;" />
 
 这样，「傻瓜」和「使馆」就都只要四键就能输入，起到了节约用键而提高效率的作用。
@@ -166,11 +168,19 @@ typora-root-url: ../../public
 
 <img src="/images/image-20260221154701766.png" alt="image-20260221154701766" style="zoom:50%;" />
 
+
+
 <img src="/images/image-20260221154725862.png" alt="image-20260221154725862" style="zoom:50%;" />
+
+
 
 <img src="/images/image-20260221154751809.png" alt="image-20260221154751809" style="zoom:50%;" />
 
+
+
 <img src="/images/image-20260221154818398.png" alt="image-20260221154818398" style="zoom:50%;" />
+
+
 
 ##### 3.2.1.4 sssS型
 
