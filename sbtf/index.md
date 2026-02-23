@@ -94,7 +94,7 @@ const practiceName = computed(() => {
 
 # 声笔条反
 
-利用科学方法高效记忆声笔输入法各方案中的部首。
+利用科学方法高效记忆声笔输入法各方案中的部首或字根。
 
 <ClientOnly>
 <div style="margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">
