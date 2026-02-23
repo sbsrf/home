@@ -99,6 +99,8 @@ const proceed = () => {
 const restart = () => {
   queue.value.clear();
   makeCards().forEach((item) => queue.value.enqueue(item));
+  // 从 localStorage 中删除对应的存储数据
+  localStorage.removeItem(props.name);
   next();
 };
 
@@ -141,9 +143,18 @@ watch(
   () => [props.name, props.data],
   () => {
     queue.value.clear();
-    // 当方案变化时，始终使用新的 props.data 生成卡片
-    // 这样可以确保使用的是当前方案的正确字根
-    makeCards().forEach((item) => queue.value.enqueue(item));
+    // 当方案变化时，检查 localStorage 中是否有对应的数据
+    const json = localStorage.getItem(props.name);
+    if (json) {
+      // 如果有，加载存储的数据
+      queue.value = MinPriorityQueue.fromArray<Radical>(
+        JSON.parse(json),
+        (x) => x.due
+      );
+    } else {
+      // 如果没有，使用新的 props.data 生成卡片
+      makeCards().forEach((item) => queue.value.enqueue(item));
+    }
     next();
   },
   { deep: true }
