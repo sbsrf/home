@@ -135,6 +135,14 @@ onMounted(() => {
 });
 </script>
 <style>
+@font-face {
+  font-family: 'Singbit';
+  src: url('/Singbit.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -142,6 +150,7 @@ onMounted(() => {
 }
 
 .radical {
+  font-family: 'Singbit', sans-serif;
   font-size: 32px;
   text-align: center;
   padding: 16px;
