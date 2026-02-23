@@ -86,7 +86,7 @@ onMounted(sync);
         <n-upload-dragger>
           <div style="margin-bottom: 12px">
             <n-icon size="48" :depth="3">
-              <file-archive />
+              <FileArchive />
             </n-icon>
           </div>
           <n-text style="font-size: 16px">
