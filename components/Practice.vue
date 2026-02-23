@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { MinPriorityQueue } from "@datastructures-js/priority-queue";
 import { supermemo, SuperMemoItem, SuperMemoGrade } from "supermemo";
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import { shuffle } from "lodash-es";
 import {
   NButton,
@@ -128,11 +128,26 @@ onMounted(() => {
       JSON.parse(json),
       (x) => x.due
     );
+  } else {
+    makeCards().forEach((item) => queue.value.enqueue(item));
   }
   next();
   // inputRef.value?.focus();
   sync();
 });
+
+// 监听 props 变化，当方案或数据变化时重新初始化
+watch(
+  () => [props.name, props.data],
+  () => {
+    queue.value.clear();
+    // 当方案变化时，始终使用新的 props.data 生成卡片
+    // 这样可以确保使用的是当前方案的正确字根
+    makeCards().forEach((item) => queue.value.enqueue(item));
+    next();
+  },
+  { deep: true }
+);
 </script>
 <style>
 @font-face {
