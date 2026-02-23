@@ -35,9 +35,7 @@ export default withPwa(defineConfig({
           { text: "所有标签", link: "/pages/tags/" }
         ],
       },
-      { text: "体验", link: "/sbkd/" },
       { text: "练习", link: "/sbtf/" },
-      { text: "工具", link: "/sbgj/" },
     ],
     search: {
       provider: "algolia",

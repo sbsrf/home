@@ -14,8 +14,8 @@ hero:
           text: 开始学习
           link: /about/
         - theme: alt
-          text: 在线体验
-          link: /sbkd/
+          text: 条反练习
+          link: /sbtf/
         - theme: alt
           text: 立刻下载
           link: https://github.com/sbsrf/sbsrf/releases
