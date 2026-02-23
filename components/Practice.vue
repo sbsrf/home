@@ -58,6 +58,14 @@ const seen = computed(() => {
 const familiar = computed(() => {
   return queue.value.toArray().filter((item) => item.repetition > 1).length;
 });
+const mastered = computed(() => {
+  // 计算已掌握的字根数量（repetition >= 3 且 interval >= 7 天）
+  return queue.value.toArray().filter((item) => item.repetition >= 3 && item.interval >= 7).length;
+});
+const isCompleted = computed(() => {
+  // 当所有字根都已掌握时，认为练习完成
+  return mastered.value === queue.value.size();
+});
 let startTime = 0;
 
 const next = () => {
@@ -238,6 +246,21 @@ watch(
           />
           {{ `${familiar} / ${length}` }}
         </n-space>
+        <n-space :align="'center'">
+          已掌握<n-progress
+            type="line"
+            :percentage="(mastered / length) * 100"
+            style="width: 160px"
+            :show-indicator="false"
+          />
+          {{ `${mastered} / ${length}` }}
+        </n-space>
+        <div v-if="isCompleted" style="color: green; font-weight: bold; margin-top: 8px;">
+          🎉 恭喜！所有字根都已掌握。练习已完成！
+        </div>
+        <div v-else-if="familiar === length" style="color: blue; margin-top: 8px;">
+          🌟 所有字根都已熟悉，进入长期巩固阶段。
+        </div>
       </n-space>
       <n-card>
         <template #header>
