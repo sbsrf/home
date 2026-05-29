@@ -1,11 +1,11 @@
 ---
 page: true
+title: 博客文章
 aside: false
-sidebar: false
-prev: false
-next: false
 ---
 
-# 声笔作者的博客文章
+<script setup>
+import PostsLayout from '../.vitepress/theme/components/PostsLayout.vue';
+</script>
 
-<Archives/>
+<PostsLayout />

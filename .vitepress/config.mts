@@ -10,7 +10,7 @@ export default withPwa(defineConfig({
   lang: "zh-Hans",
   themeConfig: {
     //@ts-ignore
-    //posts: await getPosts(/* 每页文章的数量 */10),
+    posts: await getPosts(10, false),
     comment: {
       repo: 'sbsrf/sbsrf',
       themes: 'github-light',
@@ -31,8 +31,7 @@ export default withPwa(defineConfig({
       { text: "教程", link: "/about/" },
       {
         text: "文章", items: [
-          { text: "文章列表", link: "/posts/" },
-          { text: "所有标签", link: "/pages/tags/" }
+          { text: "文章列表", link: "/posts/" }
         ],
       },
       { text: "练习", link: "/sbtf/" },
@@ -66,11 +65,11 @@ export default withPwa(defineConfig({
         {
           text: "声笔QQ群",
           items: [
-            { text: "947735684", link: "https://qm.qq.com/q/BzkD3lI6re" },
-            { text: "783734487", link: "https://qm.qq.com/q/rl1XMBWqm4" },
-            { text: "728093309", link: "https://qm.qq.com/q/ByZsKQS1os" },
-            { text: "445906697", link: "https://qm.qq.com/q/ufHlzm2ywa" },
-            { text: "780510469", link: "https://qm.qq.com/q/ETg8V3Xcxq" },
+            { text: "947735684", link: "https://qm.qq.com/q/BzkD3lI6re" },      
+            { text: "783734487", link: "https://qm.qq.com/q/rl1XMBWqm4" },      
+            { text: "728093309", link: "https://qm.qq.com/q/ByZsKQS1os" },      
+            { text: "445906697", link: "https://qm.qq.com/q/ufHlzm2ywa" },      
+            { text: "780510469", link: "https://qm.qq.com/q/ETg8V3Xcxq" },      
           ],
         },
         {
@@ -136,14 +135,9 @@ export default withPwa(defineConfig({
         },
       ],
 
-      "/posts/": [
-        {
-          text: "文章",
-          items: await getPosts(10, false),
-        },
-      ],
+      "/posts/": [],
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/sbsrf/sbsrf" }],
+    socialLinks: [{ icon: "github", link: "https://github.com/sbsrf/sbsrf" }],  
   },
   srcExclude: ['README.md'],
   rewrites: {

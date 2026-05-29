@@ -78,5 +78,5 @@ export function useYearSort(theme: any) {
 }
 
 function getPostFromTheme(theme: any): Post[] {
-    return theme.sidebar['/posts/'][0].items
+    return theme.posts || []
 }
