@@ -19,7 +19,6 @@ export function initTags(
         const element = post[index]
         let tags = element.frontMatter.tags
         if (tags) {
-            console.log(tags)
             if (typeof tags === "string") {
                 tags = [tags]
             }
@@ -31,24 +30,6 @@ export function initTags(
                     data[item].push(element)
                 }
             })
-        }
-    }
-    return data
-}
-
-export function initCategory(theme: any) {
-    const post = getPostFromTheme(theme)
-    const data: Record<string, Post[]> = {}
-    for (let index = 0; index < post.length; index++) {
-        const element = post[index]
-        const category = element.frontMatter.category
-        if (category) {
-            if (data[category]) {
-                data[category].push(element)
-            } else {
-                data[category] = []
-                data[category].push(element)
-            }
         }
     }
     return data
