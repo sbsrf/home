@@ -30,7 +30,7 @@ export default withPwa(defineConfig({
       { text: "主页", link: "/" },
       { text: "教程", link: "/about/" },
       { text: "著述", link: "/book/" },
-      { text: "文章", link: "/posts/" },
+      { text: "博文", link: "/posts/" },
       { text: "练习", link: "/sbtf/" },
     ],
     search: {
@@ -57,8 +57,20 @@ export default withPwa(defineConfig({
         },
       },
     },
-    sidebar: (() => {
-      const docsSidebar = [
+    sidebar: {
+      "/book/": [
+        {
+          text: "书籍",
+          items: [
+            { text: "目录", link: "/book/" },
+            { text: "第一章", link: "/book/chapter1/" },
+            { text: "第二章", link: "/book/chapter2/" },
+            { text: "第三章", link: "/book/chapter3/" },
+          ],
+        },
+      ],
+      "/posts/": [],
+      "/": [
         {
           text: "声笔QQ群",
           items: [
@@ -130,37 +142,14 @@ export default withPwa(defineConfig({
             { text: "版本历史", link: "/fzlc/" },
           ],
         },
-      ];
-
-      const bookSidebar = [
-        {
-          text: "书籍",
-          items: [
-            { text: "目录", link: "/book/" },
-            { text: "第一章", link: "/book/chapter1/" },
-            { text: "第二章", link: "/book/chapter2/" },
-            { text: "第三章", link: "/book/chapter3/" },
-          ],
-        },
-      ];
-
-      return (path: string) => {
-        if (path.startsWith('/book/')) {
-          return bookSidebar;
-        }
-        if (path.startsWith('/posts/')) {
-          return [];
-        }
-        return docsSidebar;
-      };
-    })(),
+      ],
+    },
     socialLinks: [{ icon: "github", link: "https://github.com/sbsrf/sbsrf" }],
   },
   srcExclude: ['README.md'],
   rewrites: {
     "docs/:page/index.md": ":page/index.md",
     "pages/:page/index.md": ":page/index.md",
-    "book/:page/index.md": ":page/index.md",
   },
   appearance: "dark",
   markdown: {
