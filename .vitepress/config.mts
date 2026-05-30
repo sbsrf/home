@@ -29,8 +29,8 @@ export default withPwa(defineConfig({
     nav: [
       { text: "主页", link: "/" },
       { text: "教程", link: "/about/" },
-      { text: "文章", link: "/posts/" },
       { text: "著述", link: "/book/" },
+      { text: "文章", link: "/posts/" },
       { text: "练习", link: "/sbtf/" },
     ],
     search: {
