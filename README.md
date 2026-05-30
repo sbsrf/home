@@ -5,6 +5,7 @@
 - `/.vitepress/`: VitePress 生成器配置
 - `/docs/`: 教程文件
 - `/posts/`: 博客文章
+- `/book/`: 书籍著述
 - `/public/`: 静态资源文件
 - `/sbtf/`: 声笔条反，在线练习声笔飞系的部首
 

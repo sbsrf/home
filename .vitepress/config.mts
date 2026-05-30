@@ -30,6 +30,7 @@ export default withPwa(defineConfig({
       { text: "主页", link: "/" },
       { text: "教程", link: "/about/" },
       { text: "文章", link: "/posts/" },
+      { text: "著述", link: "/book/" },
       { text: "练习", link: "/sbtf/" },
     ],
     search: {
@@ -61,11 +62,11 @@ export default withPwa(defineConfig({
         {
           text: "声笔QQ群",
           items: [
-            { text: "947735684", link: "https://qm.qq.com/q/BzkD3lI6re" },      
-            { text: "783734487", link: "https://qm.qq.com/q/rl1XMBWqm4" },      
-            { text: "728093309", link: "https://qm.qq.com/q/ByZsKQS1os" },      
-            { text: "445906697", link: "https://qm.qq.com/q/ufHlzm2ywa" },      
-            { text: "780510469", link: "https://qm.qq.com/q/ETg8V3Xcxq" },      
+            { text: "947735684", link: "https://qm.qq.com/q/BzkD3lI6re" },
+            { text: "783734487", link: "https://qm.qq.com/q/rl1XMBWqm4" },
+            { text: "728093309", link: "https://qm.qq.com/q/ByZsKQS1os" },
+            { text: "445906697", link: "https://qm.qq.com/q/ufHlzm2ywa" },
+            { text: "780510469", link: "https://qm.qq.com/q/ETg8V3Xcxq" },
           ],
         },
         {
@@ -98,17 +99,17 @@ export default withPwa(defineConfig({
             },
             {
               text: "声笔新系", link: "/sbx/",
-              items: [    
-                { text: "声笔象码", link: "/sbxm/" },       
-                { text: "声笔猛码", link: "/sbmm/" },       
+              items: [
+                { text: "声笔象码", link: "/sbxm/" },
+                { text: "声笔猛码", link: "/sbmm/" },
               ],
             },
             {
               text: "声笔混拼", link: "/sbh/",
               items: [
                 { text: "声笔易拼", link: "/sbyp/" },
-                { text: "声笔拼音", link: "/sbpy/" },          
-                { text: "声笔四拼", link: "/sbsp/" },          
+                { text: "声笔拼音", link: "/sbpy/" },
+                { text: "声笔四拼", link: "/sbsp/" },
               ],
             },
             {
@@ -132,13 +133,26 @@ export default withPwa(defineConfig({
       ],
 
       "/posts/": [],
+
+      "/book/": [
+        {
+          text: "书籍",
+          items: [
+            { text: "目录", link: "/book/" },
+            { text: "第一章", link: "/book/chapter1/" },
+            { text: "第二章", link: "/book/chapter2/" },
+            { text: "第三章", link: "/book/chapter3/" },
+          ],
+        },
+      ],
     },
-    socialLinks: [{ icon: "github", link: "https://github.com/sbsrf/sbsrf" }],  
+    socialLinks: [{ icon: "github", link: "https://github.com/sbsrf/sbsrf" }],
   },
   srcExclude: ['README.md'],
   rewrites: {
     "docs/:page/index.md": ":page/index.md",
     "pages/:page/index.md": ":page/index.md",
+    "book/:page/index.md": ":page/index.md",
   },
   appearance: "dark",
   markdown: {
