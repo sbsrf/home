@@ -60,9 +60,9 @@ export default withPwa(defineConfig({
     sidebar: {
       "/book/": [
         {
-          text: "书籍",
+          text: "输入法理论与实践",
           items: [
-            { text: "目录", link: "/book/" },
+            { text: "引言", link: "/book/" },
             { text: "第一章", link: "/book/chapter1/" },
             { text: "第二章", link: "/book/chapter2/" },
             { text: "第三章", link: "/book/chapter3/" },
