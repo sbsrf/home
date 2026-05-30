@@ -58,6 +58,20 @@ export default withPwa(defineConfig({
       },
     },
     sidebar: {
+      "/book/": [
+        {
+          text: "书籍",
+          items: [
+            { text: "目录", link: "/book/" },
+            { text: "第一章", link: "/book/chapter1/" },
+            { text: "第二章", link: "/book/chapter2/" },
+            { text: "第三章", link: "/book/chapter3/" },
+          ],
+        },
+      ],
+
+      "/posts/": [],
+
       "/": [
         {
           text: "声笔QQ群",
@@ -128,20 +142,6 @@ export default withPwa(defineConfig({
           items: [
             { text: "常见问题", link: "/faq/" },
             { text: "版本历史", link: "/fzlc/" },
-          ],
-        },
-      ],
-
-      "/posts/": [],
-
-      "/book/": [
-        {
-          text: "书籍",
-          items: [
-            { text: "目录", link: "/book/" },
-            { text: "第一章", link: "/book/chapter1/" },
-            { text: "第二章", link: "/book/chapter2/" },
-            { text: "第三章", link: "/book/chapter3/" },
           ],
         },
       ],
