@@ -9,7 +9,6 @@
 - `/components/`: Markdown 中用到的 Vue 组件
 - `/src/`: 组件引用的 JavaScript 类和函数
 - `/public/`: 静态资源文件
-- `/sbgj/`: 声笔工具，用于迁移9.X的词典到10.X的声笔词典
 - `/sbtf/`: 声笔条反，在线练习声笔飞系的部首
 
 ## 开发
