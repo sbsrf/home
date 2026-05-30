@@ -11,17 +11,20 @@ hero:
         alt: sbxlm
     actions:
         - theme: brand
-          text: 开始学习
+          text: 教程
           link: /about/
         - theme: alt
-          text: 条反练习
+          text: 著述
+          link: /book/
+        - theme: alt
+          text: 博文
+          link: /posts/
+        - theme: alt
+          text: 练习
           link: /sbtf/
         - theme: alt
-          text: 立刻下载
+          text: 下载
           link: https://github.com/sbsrf/sbsrf/releases
-        - theme: alt
-          text: 博客
-          link: /posts/
 ---
 
 <script setup>

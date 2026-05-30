@@ -92,7 +92,7 @@ const practiceName = computed(() => {
 });
 </script>
 
-# 声笔条反
+# 条反练习
 
 利用科学方法高效记忆声笔输入法各方案中的部首或字根。
 
