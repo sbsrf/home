@@ -57,22 +57,8 @@ export default withPwa(defineConfig({
         },
       },
     },
-    sidebar: {
-      "/book/": [
-        {
-          text: "书籍",
-          items: [
-            { text: "目录", link: "/book/" },
-            { text: "第一章", link: "/book/chapter1/" },
-            { text: "第二章", link: "/book/chapter2/" },
-            { text: "第三章", link: "/book/chapter3/" },
-          ],
-        },
-      ],
-
-      "/posts/": [],
-
-      "/": [
+    sidebar: (() => {
+      const docsSidebar = [
         {
           text: "声笔QQ群",
           items: [
@@ -144,8 +130,30 @@ export default withPwa(defineConfig({
             { text: "版本历史", link: "/fzlc/" },
           ],
         },
-      ],
-    },
+      ];
+
+      const bookSidebar = [
+        {
+          text: "书籍",
+          items: [
+            { text: "目录", link: "/book/" },
+            { text: "第一章", link: "/book/chapter1/" },
+            { text: "第二章", link: "/book/chapter2/" },
+            { text: "第三章", link: "/book/chapter3/" },
+          ],
+        },
+      ];
+
+      return (path: string) => {
+        if (path.startsWith('/book/')) {
+          return bookSidebar;
+        }
+        if (path.startsWith('/posts/')) {
+          return [];
+        }
+        return docsSidebar;
+      };
+    })(),
     socialLinks: [{ icon: "github", link: "https://github.com/sbsrf/sbsrf" }],
   },
   srcExclude: ['README.md'],
