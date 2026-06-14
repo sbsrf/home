@@ -30,7 +30,7 @@ Poto 开发 Win 复制即查字词打法软件[「声笔查查」](https://getqu
 ![image-20250824095816719](/images/image-20250824095816719.png)
 
 - 安装小狼毫后，将 weasel 压缩包里的 `weasel.custom.yaml` 和`sbxlm.ico`也复制到新生成的<u>用户文件夹</u> rime 中，注意不要错误地复制地了<u>程序文件夹</u>。若要定制小狼毫主题，也请在 `weasel.custom.yaml` 中进行。
-- 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹 rime 中，重新部署一下就安装好了声笔输入法的方案。
+- 将 `sbsrf.zip` 压缩包中的所有内容复制到用户文件夹 rime 中（注意不是同名的程序文件夹），重新部署一下就安装好了声笔输入法的方案。
 
 ### 2.2 在 Android 上
 

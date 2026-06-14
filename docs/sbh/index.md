@@ -9,4 +9,4 @@ date: 2025-1-26
 
 声笔拼音通过对韵母拼式进行改造，使其不含辅音字母，从而完全避免了音节的切分歧义，同时也使得顶功可以大展宏图，以很小的格外成本使输入效率显著提升。
 
-对于普通话水平低，韵母完全弄不清楚的人，则建议使用[声笔简系](https://sbxlm.github.io/sbj/)里的[声笔简拼](https://sbxlm.github.io/sbjp/)和[声笔简码](https://sbxlm.github.io/sbjm/)。
+对于普通话水平低，韵母完全弄不清楚的人，或者纯粹想比声笔拼音效率更高的，则建议使用[声笔简系](https://sbxlm.github.io/sbj/)里的[声笔简拼](https://sbxlm.github.io/sbjp/)，它是其中的[声笔简码](https://sbxlm.github.io/sbjm/)的升级。

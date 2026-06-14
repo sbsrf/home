@@ -62,8 +62,8 @@ export default withPwa(defineConfig({
         {
           text: "输入法理论与实践",
           items: [
-            { text: "内容简介", link: "/book/" },
-            { text: "第一章 引言", link: "/book/chapter1/" },
+            { text: "前言", link: "/book/" },
+            { text: "第一章 绪论", link: "/book/chapter1/" },
             { text: "第二章 理论", link: "/book/chapter2/" },
             { text: "第三章 实现", link: "/book/chapter3/" },
             { text: "第四章 测评", link: "/book/chapter4/" },
