@@ -88,7 +88,7 @@ typora-root-url: ../../public
 
 - 三简字：后接声母和标点时可以即时顶屏，当然也可空格上屏。但是，后接数字时不能顶屏，因为它们被作为多根字的第四码了。
    - 有理字：1883个，声母加首根加末根首笔的字母编码，例如「军jie jiea」「石sse sseu」「极jmo jmn.」「住zre zrw,」「资zdi zdui」。
-   - 标点字：797个，声母加首根加无理的标点，两码后有提示，例如「双sk; skao」「甚sk' skf'」「德dp; dpk.」「夺dp' dpei」「议yw; yww/」「育yw' ywy;」。
+   - 标点字：797个，声母加首根加有理的标点，两码后有提示，例如「双sk; skao」「甚sk' skf'」「德dp; dpk.」「夺dp' dpei」「议yw; yww/」「育yw' ywy;」。
 
 ![image-20260122085901717](/images/image-20260122085901717.png)
 
