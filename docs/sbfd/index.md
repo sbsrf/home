@@ -519,7 +519,7 @@ typora-copy-images-to: ./..\..\public\images
 
 ![image-20260624155330264](/images/image-20260624155330264.png)
 
-![image-20260624155437455](/../docs/public/images/image-20260624155437455.png)
+![image-20260624161017514](/images/image-20260624161017514.png)
 
 ### 5.3 延迟顶屏
 
