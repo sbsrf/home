@@ -29,7 +29,7 @@ export default withPwa(defineConfig({
     nav: [
       { text: "主页", link: "/" },
       { text: "教程", link: "/about/" },
-      // { text: "著述", link: "/book/" },
+      { text: "著述", link: "/book/" },
       { text: "博文", link: "/posts/" },
       { text: "练习", link: "/sbtf/" },
     ],
