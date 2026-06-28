@@ -13,9 +13,9 @@ hero:
         - theme: brand
           text: 教程
           link: /about/
-        - theme: alt
-          text: 著述
-          link: /book/
+#        - theme: alt
+#          text: 著述
+#          link: /book/
         - theme: alt
           text: 博文
           link: /posts/
