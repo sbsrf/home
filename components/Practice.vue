@@ -139,6 +139,7 @@ onMounted(() => {
       (x) => x.due
     );
   } else {
+    queue.value.clear();
     makeCards().forEach((item) => queue.value.enqueue(item));
   }
   next();
