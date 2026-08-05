@@ -41,3 +41,4 @@ titleTemplate: 输入法理论与实践
 34. 任华健, 郝秀兰, 徐稳静. 融合递增词汇选择的深度学习中文输入法[J]. 电信科学, 2022, 38(12): 57-68.
 35. Zhang Z S, Meng Z, Zhao H. A Smart Sliding Chinese Pinyin Input Method Editor on Touchscreen[EB/OL]. arXiv:1909.01063, 2019.
 36. Liu J H. Forgetting Characters When Picking up a Pen: The Impact of Input Methods on Chinese Character Writing and Cognition[J]. Advances in Social Sciences, 2024, 13(10): 487-493.
+37. Ahmed S A, Wolfgang S. Analysis of Text Entry Performance Metrics[C]. 2009 IEEE Toronto International Conference Science and Technology for Humanity (TIC-STH). 2009: 100-105.
