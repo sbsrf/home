@@ -1,6 +1,8 @@
 ---
 title: 4 方案
 titleTemplate: 输入法理论与实践
+typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\assets
 ---
 
 # 4 方案

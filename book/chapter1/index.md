@@ -1,6 +1,8 @@
 ---
 title: 1 绪论
 titleTemplate: '输入法理论与实践'
+typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\assets
 ---
 
 # 1 绪论
