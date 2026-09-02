@@ -7,6 +7,7 @@ tags:
 - 猛码
 - 顶功
 typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\images
 ---
 
 ## 1 猛码基础

@@ -2,6 +2,7 @@
 title: 常见问题
 date: 2021-07-29 09:00:23
 typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\images
 ---
 
 ## 声笔系列码是什么？

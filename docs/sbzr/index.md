@@ -1,8 +1,8 @@
 ---
 title: 声笔自然
 date: 2020-12-08 15:06:23
-typora-copy-images-to: ../../public/images
 typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\images
 ---
 
 ## 1 概述

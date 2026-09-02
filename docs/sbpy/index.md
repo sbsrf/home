@@ -4,6 +4,7 @@ title: 声笔拼音
 date: 2019-11-30 04:05:05
 comments: false
 typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\images
 ---
 
 ## 1  引言

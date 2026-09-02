@@ -3,6 +3,7 @@ title: 安装配置
 date: 2021-07-01 15:37:36
 comments: false
 typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\images
 ---
 
 声笔系列码，又称声笔输入法，是基于著名的开源输入法平台 Rime 进行二次开发的，其安装配置比较复杂。这一方面有 Rime 的原因，因为它没有提供丰富的图形界面，对普通用户不太友好。

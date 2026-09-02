@@ -2,6 +2,7 @@
 title: 声笔易拼
 date: 2025-1-26
 typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\images
 ---
 
 声笔易拼力图在一般的拼音输入法基础上以最小的改动来获得最大的收益：一方面增加易学性和容错能力，另一方面缩短码长、增强增强筛重能力、提高确定性和易用性。

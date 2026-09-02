@@ -2,6 +2,7 @@
 title: 声笔自整
 date: 2020-12-08 15:06:23
 typora-root-url: ..\..\public
+typora-copy-images-to: ./..\..\public\images
 ---
 
 ## 1 简单的介绍
