@@ -179,6 +179,118 @@ const wlziData = `
   return [char, code]
 })
 
+// 飞单声笔字：声笔飞单方案中需要直接记忆编码的汉字
+const fdsbData = `
+有	ye
+道	do
+来	le
+她	ta
+大	de
+上	si
+中	zi
+说	so
+为	wo
+着	zo
+子	za
+那	na
+也	ya
+得	du
+会	hu
+国	gi
+名	mu
+心	xo
+过	ge
+好	ha
+然	ru
+对	da
+自	zu
+小	xi
+天	te
+看	ku
+手	su
+里	li
+家	jo
+起	qe
+想	xe
+事	se
+还	he
+如	ra
+面	me
+无	we
+头	to
+方	fo
+开	ke
+前	qo
+见	ji
+成	ce
+用	yu
+经	ja
+笑	xu
+年	nu
+当	di
+日	ri
+意	yo
+此	ci
+进	je
+把	be
+同	ti
+全	qu
+回	hi
+力	la
+分	fu
+高	go
+话	ho
+儿	vu
+明	mi
+眼	yi
+正	ze
+从	cu
+口	ki
+外	wu
+公	gu
+门	mo
+民	ma
+二	ve
+部	bo
+白	bu
+给	ga
+内	ni
+几	ju
+别	bi
+次	co
+立	lo
+体	tu
+安	vo
+快	ko
+夫	fe
+利	lu
+让	ro
+边	ba
+双	sa
+强	qa
+非	fi
+飞	fa
+南	ne
+若	re
+且	qi
+怕	po
+暗	vi
+农	no
+品	pi
+片	pu
+晚	wi
+阿	va
+除	ca
+破	pe
+线	xa
+维	wa
+皮	pa
+孔	ka
+`.trim().split('\n').map((line) => {
+  const [char, code] = line.trim().split(/\s+/)
+  return [char, code]
+})
+
 // 定义多个方案的 keymap
 const schemes = {
   feixi: {
@@ -206,6 +318,10 @@ const schemes = {
       n: "女牛⺧鸟鳥衤礻廾止",
       m: "马馬门門毛木皿目麻米麦麥母毋毌",
     }
+  },
+  fdsb: {
+    name: '飞单声笔字',
+    data: fdsbData,
   },
   sbxm: {
     name: '声笔象码',
