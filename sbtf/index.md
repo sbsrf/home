@@ -388,7 +388,7 @@ const practiceName = computed(() => {
 
 # 条反练习
 
-利用科学方法高效记忆声笔输入法各方案中的部首或字根。
+利用科学方法高效记忆声笔方案中的部首、字根或字词。
 
 <ClientOnly>
 <div style="margin-bottom: 16px; display: flex; align-items: center; justify-content: center;">
