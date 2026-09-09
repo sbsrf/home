@@ -78,7 +78,7 @@ function extract(name) {
 }
 const rows = extract('<key>Data');   // 替换为新常量名
 text('count: ' + rows.length);
-const bad = rows.filter(([c,k]) => !c || !k || /\s/.test(c) || !/^[a-z]+$/.test(k));
+const bad = rows.filter(([c,k]) => !c || !k || /\s/.test(c) || !/^[a-z]+(\|[a-z]+)*$/.test(k));
 const chars = rows.map(r => r[0]);
 const dupC = [...new Set(chars.filter((c,i) => chars.indexOf(c) !== i))];
 const codes = rows.map(r => r[1]);
@@ -102,7 +102,9 @@ text('first/last: ' + JSON.stringify(rows[0]) + ' ' + JSON.stringify(rows[rows.l
 
 ## 常见坑
 
+- **同一组字表内出现重复汉字**（典型：多音字，如「长」有 cc、zc 两码）：合并成一条 `长	cc|zc`。Practice.vue 已支持以 `|` 分隔的多个等价编码——输入任一即判正确，提示时显示 `[cc / zc]`。不要保留两张同字卡。
+- 修改已发布练习的卡牌数量后，浏览器 localStorage 里仍是旧队列（含已删卡片）；需提醒用户在该练习下点一次「重新开始」清掉旧进度。
 - 同一汉字在不同方案中编码不同（如「得」在飞单/象码中编码不同），这是正常的，各练习独立存储进度。
-- 编码含 2~4 个小写字母，Practice 组件逐键判定长度，无需特殊处理。
+- 编码含 2~4 个小写字母（多等价码时用 `|` 连接），Practice 组件逐键判定长度，无需特殊处理。
 - 字表必须用制表符分隔；若用户消息中是空格，模板里的 `split(/\s+/)` 也能兼容，但写入文件时保持制表符风格一致。
 - Shell 工具在本机被 PowerShell 执行策略拦截（`about_Execution_Policies` 报错），直接用 MCP Exec 校验，不要反复重试 shell。

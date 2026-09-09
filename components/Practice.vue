@@ -51,6 +51,11 @@ const input = ref("");
 const inputRef = ref<HTMLElement | null>(null);
 const showModal = ref(false);
 const current = computed(() => queue.value.front());
+// 一张卡可以有多个等价正确编码，以 | 分隔（如多音字「长」的 cc|zc）
+const currentKeys = computed(() => {
+  const key = current.value?.key;
+  return key ? key.split("|") : [];
+});
 const length = computed(() => queue.value.size());
 const seen = computed(() => {
   return queue.value.toArray().filter((item) => item.repetition > 0).length;
@@ -121,9 +126,15 @@ const discard = () => {
 };
 
 const process = (newInput: string) => {
-  if (current.value.key === newInput.toLowerCase()) {
+  // 练习已过关（所有卡牌已掌握）后禁止输入，只有「重新开始」才能再练
+  if (isCompleted.value) {
+    input.value = "";
+    return;
+  }
+  const value = newInput.toLowerCase();
+  if (currentKeys.value.includes(value)) {
     proceed();
-  } else if (current.value.key.length === newInput.length) {
+  } else if (currentKeys.value.some((key) => key.length === value.length)) {
     hint.value = true;
     input.value = "";
   } else {
@@ -257,7 +268,7 @@ watch(
           {{ `${mastered} / ${length}` }}
         </n-space>
         <div v-if="isCompleted" style="color: green; font-weight: bold; margin-top: 8px;">
-          🎉 恭喜！所有字根都已掌握。练习已完成！
+          🎉 恭喜！所有字根都已掌握，练习已完成！点击「重新开始」可再练一次。
         </div>
         <div v-else-if="familiar === length" style="color: blue; margin-top: 8px;">
           🌟 所有字根都已熟悉，进入长期巩固阶段。
@@ -267,13 +278,14 @@ watch(
         <template #header>
           <div class="radical">
             <span>{{ current?.radical }}</span>
-            <span v-if="hint">&nbsp;[{{ current?.key }}]</span>
+            <span v-if="hint">&nbsp;[{{ currentKeys.join(' / ') }}]</span>
           </div>
           <n-input
             ref="inputRef"
             :value="input"
             @input="process"
-            placeholder="请输入对应的编码"
+            :disabled="isCompleted"
+            :placeholder="isCompleted ? '练习已完成，点击「重新开始」可再练一次' : '请输入对应的编码'"
             style="font-size: 16px"
           />
         </template>
