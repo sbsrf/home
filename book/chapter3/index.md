@@ -5,9 +5,12 @@ typora-root-url: ..\..\public
 typora-copy-images-to: ./..\..\public\assets
 ---
 
-# 3 实现
+# 3 研发
+
+开发视角
 
 ## 3.1 硬件
+
   ○ 人体：脑、手、眼
   ○ 界面：键盘、屏幕
   ○ 机器：智能设备的主机
