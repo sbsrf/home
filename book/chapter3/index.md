@@ -5,15 +5,16 @@ typora-root-url: ..\..\public
 typora-copy-images-to: ./..\..\public\assets
 ---
 
-# 3 研发
+# 3 开发
 
-开发视角
+开发视角，也可包括宣传和营销，实际上就是供方视角。
 
 ## 3.1 硬件
 
   ○ 人体：脑、手、眼
   ○ 界面：键盘、屏幕
   ○ 机器：智能设备的主机
+
 ## 3.2 软件
 - 操作系统： Windows、macOS、Linux、Android、iOS
 
@@ -30,7 +31,7 @@ typora-copy-images-to: ./..\..\public\assets
   - 跨程序输入通信、进程间消息协议
 
   - 各系统统一输入法开发规范，隔离系统
-- 输入软件：一体式（搜狗输入法）与组合式（Rime， 前后端分离）
+- 输入软件：一体式（搜狗输入法）与模块式（Rime， 前后端分离），闭源与开源
 
   - 后端引擎：librime
 
